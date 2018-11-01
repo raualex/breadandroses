@@ -1,0 +1,87 @@
+body {
+  background-color: #CC2B1D;
+}
+
+.blue-cover-layer {
+  background-color: #2b1dcc;
+  bottom: 0;
+  height: 250px;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+
+.blue-foreground {
+  background-color: #2b1dcc;
+  border-top: solid 4px #000;
+  border-radius: 200%;
+  bottom: 0;
+  height: 480px;
+  left: -170px;
+  position: absolute;
+  width: 125%;
+  z-index: 1;
+}
+
+.fist {
+  height: 500px;
+  position: absolute;
+  width: 500px;
+  z-index: 4;
+}
+
+.outer {
+  position: absolute;
+  top: -150px;
+  left: 210px;
+  width: 1000px;
+  height: 455px;
+  border-radius: 500px;
+  padding-top: 545px;
+  -webkit-animation-name: rotate1;
+  -webkit-animation-duration:2s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-timing-function:linear;
+  -moz-animation-name: rotate1;
+  -moz-animation-duration:2s;
+  -moz-animation-iteration-count:infinite;
+  -moz-animation-timing-function:linear;
+}
+
+.outer b {
+  z-index: 0;
+  display: block;
+  width: 0;
+  height: 0;
+  border-width: 45px 500px;
+  border-radius: 500px;
+  overflow: hidden;
+  margin: -90px 0 0 0;
+  border-color: transparent #fbe75d;
+  border-style: solid;
+}
+
+.outer b:nth-child(1) { -webkit-transform:rotate(20deg);  -moz-transform:rotate(20deg);  }
+.outer b:nth-child(2) { -webkit-transform:rotate(40deg);  -moz-transform:rotate(40deg);  }
+.outer b:nth-child(3) { -webkit-transform:rotate(60deg);  -moz-transform:rotate(60deg);  }
+.outer b:nth-child(4) { -webkit-transform:rotate(80deg);  -moz-transform:rotate(80deg);  }
+.outer b:nth-child(5) { -webkit-transform:rotate(100deg); -moz-transform:rotate(100deg); }
+.outer b:nth-child(6) { -webkit-transform:rotate(120deg); -moz-transform:rotate(120deg); }
+.outer b:nth-child(7) { -webkit-transform:rotate(140deg); -moz-transform:rotate(140deg); }
+.outer b:nth-child(8) { -webkit-transform:rotate(160deg); -moz-transform:rotate(160deg); }
+.outer b:nth-child(9) { -webkit-transform:rotate(180deg); -moz-transform:rotate(180deg); }
+
+.star {
+  left: 28%;
+  position: absolute;
+  z-index: 3;
+}
+
+@-webkit-keyframes rotate1 {
+    from { -webkit-transform: rotate(0deg); }
+    to   { -webkit-transform: rotate(20deg); }
+}
+@-moz-keyframes rotate1 {
+    from { -moz-transform: rotate(0deg); }
+    to   { -moz-transform: rotate(20deg); }
+}
