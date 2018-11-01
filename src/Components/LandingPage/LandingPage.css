@@ -7,11 +7,11 @@ body {
   background-color: #50241E;
   bottom: 0;
   display: flex;
-  height: 250px;
+  flex-direction: column;
+  height: 600px;
   justify-content: center;
   position: absolute;
   width: 100%;
-  z-index: 2;
 }
 
 .back-foreground {
@@ -19,11 +19,35 @@ body {
   border-top: solid 8px #000;
   border-radius: 200%;
   bottom: 0;
-  height: 480px;
-  left: -170px;
+  height: 740px;
+  left: -340px;
   position: absolute;
-  width: 125%;
-  z-index: 1;
+  width: 150%;
+}
+
+.enter-btn {
+  background-color: #f4c076;
+  border: solid 4px #000;
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+  height: 60px;
+  margin-top: 40px;
+  text-align: center;
+  width: 250px;
+}
+
+.enter-btn:active {
+  background-color: #CC2B1D;
+  color: #fff;
+}
+
+.enter-btn:hover {
+  cursor: pointer;
+}
+
+.enter-btn:focus {
+  outline: none;
 }
 
 .fist {
@@ -36,13 +60,14 @@ body {
 }
 
 .outer {
-  position: absolute;
+  position: relative;
   top: -150px;
   left: 210px;
   width: 1000px;
   height: 455px;
   border-radius: 500px;
   padding-top: 545px;
+  z-index: -1;
   -webkit-animation-name: rotate1;
   -webkit-animation-duration:2s;
   -webkit-animation-iteration-count:infinite;
@@ -88,9 +113,17 @@ body {
 .subtitle {
   -webkit-text-stroke: 2px #000;
   color: #f4c076;
-  font-family: 'Notable', sans-serif;
-  margin-right: 55px;
-  margin-top: 100px;
+  font-size: 2.5em;
+  font-weight: 700;
+  font-family: 'Black Han Sans', sans-serif;
+  margin-right: 15px;
+  margin-top: 80px;
+}
+
+.sun-container {
+  flex-direction: column;
+  display: flex;
+  position: relative;
 }
 
 .title-container {
@@ -105,7 +138,7 @@ body {
 .title-text {
   -webkit-text-stroke: 2px #000;
   color: #f4c076;
-  font-family: 'Notable', sans-serif;
+  font-family: 'Black Han Sans', sans-serif;
   font-size: 4em;
 }
 

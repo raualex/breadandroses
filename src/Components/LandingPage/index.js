@@ -1,7 +1,7 @@
 import React from 'react';
 import './LandingPage.css';
-import star from '../../Images/back_star.png';
-import fist from '../../Images/power.svg';
+import star from '../../Utils/Assets/Images/back_star.png';
+import fist from '../../Utils/Assets/Images/power.svg';
 
 export const LandingPage = () => {
 
@@ -20,10 +20,10 @@ export const LandingPage = () => {
         <img src={fist} className="fist" alt="fist" />
       </div>
       <div className="back-foreground">
+      </div>
       <div className="back-cover-layer">
         <h2 className="subtitle">What is Congress Doing for You?</h2>
-        <button></button>
-      </div>
+        <button className="enter-btn">ENTER</button>
       </div>
     </div>
   )
