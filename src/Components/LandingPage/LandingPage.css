@@ -3,7 +3,7 @@ body {
 }
 
 .blue-cover-layer {
-  background-color: #2b1dcc;
+  background-color: #4739e3;
   bottom: 0;
   height: 250px;
   position: absolute;
@@ -12,7 +12,7 @@ body {
 }
 
 .blue-foreground {
-  background-color: #2b1dcc;
+  background-color: #4739e3;
   border-top: solid 4px #000;
   border-radius: 200%;
   bottom: 0;
@@ -24,9 +24,11 @@ body {
 }
 
 .fist {
-  height: 500px;
+  height: 200px;
+  left: 200px;
   position: absolute;
-  width: 500px;
+  top: 240px;
+  width: 200px;
   z-index: 4;
 }
 
@@ -54,7 +56,6 @@ body {
   width: 0;
   height: 0;
   border-width: 45px 500px;
-  border-radius: 500px;
   overflow: hidden;
   margin: -90px 0 0 0;
   border-color: transparent #fbe75d;
@@ -72,9 +73,13 @@ body {
 .outer b:nth-child(9) { -webkit-transform:rotate(180deg); -moz-transform:rotate(180deg); }
 
 .star {
-  left: 28%;
   position: absolute;
   z-index: 3;
+}
+
+.star-container {
+  left: 28%;
+  position: absolute;
 }
 
 @-webkit-keyframes rotate1 {

@@ -11,8 +11,10 @@ export const LandingPage = () => {
       <div className="outer">
         <b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b>
       </div>
-      <img src={star} className="star" alt="star" />
-      <img src={fist} className="fist" alt="fist" />
+      <div className="star-container">
+        <img src={star} className="star" alt="star" />
+        <img src={fist} className="fist" alt="fist" />
+      </div>
       <div className="blue-foreground">
       <div className="blue-cover-layer">
       </div>
