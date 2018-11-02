@@ -1,0 +1,101 @@
+.btn-container {
+  border: solid 4px #000;
+  height: 80px;
+  margin-top: 66px;
+  width: 700px;
+}
+
+.header-bar {
+  background-image: url('../../Utils/Assets/Images/sun_background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: solid 4px #000;
+  display: flex;
+  height: 150px;
+  justify-content: space-between;
+}
+
+.house-btn {
+  border-left: solid 2px #000;
+}
+
+.senate-btn {
+  border-right: solid 2px #000;
+}
+
+.house-btn,
+.senate-btn {
+  background-color: #f4c076;
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 2em;
+  font-weight: 400;
+  height: 100%;
+  width: 50%;
+}
+
+.house-btn:active,
+.senate-btn:active {
+  background-color: #CC2B1D;
+  color: #fff;
+}
+
+.house-btn:hover,
+.senate-btn:hover {
+  cursor: pointer;
+}
+
+.house-btn:focus,
+.senate-btn:focus {
+  outline: none;
+}
+
+.house-link,
+.senate-link {
+  color: #000;
+  height: 100%;
+  text-decoration: none;
+  width: 100%;
+}
+
+.nav-fist {
+  height: 35px;
+  left: 33px;
+  position: absolute;
+  top: 41px;
+  width: 35px;
+  z-index: 2;
+}
+
+.nav-star {
+  height: 100px;
+  position: absolute;
+  right: 0;
+  width: 100px;
+  z-index: 1;
+}
+
+.nav-star-container {
+  background: radial-gradient(#fbe75d, #50241E);
+  border: solid 4px #000;
+  height: 100px;
+  position: relative;
+  right: 20px;
+  top: 20px;
+  width: 100px;
+}
+
+.nav-title {
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.nav-title-container {
+  background: radial-gradient(#fbe75d, #50241E);
+  border: solid 4px #000;
+  height: 100px;
+  position: relative;
+  left: 20px;
+  top: 20px;
+  width: 100px;
+}

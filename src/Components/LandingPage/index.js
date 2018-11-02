@@ -2,6 +2,7 @@ import React from 'react';
 import './LandingPage.css';
 import star from '../../Utils/Assets/Images/back_star.png';
 import fist from '../../Utils/Assets/Images/power.svg';
+import { NavLink } from 'react-router-dom'
 
 export const LandingPage = () => {
 
@@ -23,7 +24,11 @@ export const LandingPage = () => {
       </div>
       <div className="back-cover-layer">
         <h2 className="subtitle">What is Congress Doing for You?</h2>
-        <button className="enter-btn">ENTER</button>
+        <NavLink to='/welcome'>
+          <button className="enter-btn">
+            ENTER
+          </button>
+        </NavLink>
       </div>
     </div>
   )
