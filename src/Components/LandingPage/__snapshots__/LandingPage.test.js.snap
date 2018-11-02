@@ -1,0 +1,767 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LandingPage matches the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <LandingPage />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="title-container"
+        >
+          <h1
+            className="title-text"
+          >
+            BREAD
+          </h1>
+          <h1
+            className="title-text"
+          >
+            &
+          </h1>
+          <h1
+            className="title-text"
+          >
+            ROSES
+          </h1>
+        </div>,
+        <div
+          className="outer"
+        >
+          <b />
+          <b />
+          <b />
+          <b />
+          <b />
+          <b />
+          <b />
+          <b />
+          <b />
+          <b />
+        </div>,
+        <div
+          className="star-container"
+        >
+          <img
+            alt="star"
+            className="star"
+            src="back_star.png"
+          />
+          <img
+            alt="fist"
+            className="fist"
+            src="power.svg"
+          />
+        </div>,
+        <div
+          className="back-foreground"
+        />,
+        <div
+          className="back-cover-layer"
+        >
+          <h2
+            className="subtitle"
+          >
+            What is Congress Doing for You?
+          </h2>
+          <button
+            className="enter-btn"
+          >
+            ENTER
+          </button>
+        </div>,
+      ],
+      "className": "sun-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1
+              className="title-text"
+            >
+              BREAD
+            </h1>,
+            <h1
+              className="title-text"
+            >
+              &
+            </h1>,
+            <h1
+              className="title-text"
+            >
+              ROSES
+            </h1>,
+          ],
+          "className": "title-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "BREAD",
+              "className": "title-text",
+            },
+            "ref": null,
+            "rendered": "BREAD",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "&",
+              "className": "title-text",
+            },
+            "ref": null,
+            "rendered": "&",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "ROSES",
+              "className": "title-text",
+            },
+            "ref": null,
+            "rendered": "ROSES",
+            "type": "h1",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <b />,
+            <b />,
+            <b />,
+            <b />,
+            <b />,
+            <b />,
+            <b />,
+            <b />,
+            <b />,
+            <b />,
+          ],
+          "className": "outer",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": "b",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": "b",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": "b",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": "b",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": "b",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": "b",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": "b",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": "b",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": "b",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": "b",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <img
+              alt="star"
+              className="star"
+              src="back_star.png"
+            />,
+            <img
+              alt="fist"
+              className="fist"
+              src="power.svg"
+            />,
+          ],
+          "className": "star-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "star",
+              "className": "star",
+              "src": "back_star.png",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "fist",
+              "className": "fist",
+              "src": "power.svg",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "back-foreground",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h2
+              className="subtitle"
+            >
+              What is Congress Doing for You?
+            </h2>,
+            <button
+              className="enter-btn"
+            >
+              ENTER
+            </button>,
+          ],
+          "className": "back-cover-layer",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "What is Congress Doing for You?",
+              "className": "subtitle",
+            },
+            "ref": null,
+            "rendered": "What is Congress Doing for You?",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "ENTER",
+              "className": "enter-btn",
+            },
+            "ref": null,
+            "rendered": "ENTER",
+            "type": "button",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="title-container"
+          >
+            <h1
+              className="title-text"
+            >
+              BREAD
+            </h1>
+            <h1
+              className="title-text"
+            >
+              &
+            </h1>
+            <h1
+              className="title-text"
+            >
+              ROSES
+            </h1>
+          </div>,
+          <div
+            className="outer"
+          >
+            <b />
+            <b />
+            <b />
+            <b />
+            <b />
+            <b />
+            <b />
+            <b />
+            <b />
+            <b />
+          </div>,
+          <div
+            className="star-container"
+          >
+            <img
+              alt="star"
+              className="star"
+              src="back_star.png"
+            />
+            <img
+              alt="fist"
+              className="fist"
+              src="power.svg"
+            />
+          </div>,
+          <div
+            className="back-foreground"
+          />,
+          <div
+            className="back-cover-layer"
+          >
+            <h2
+              className="subtitle"
+            >
+              What is Congress Doing for You?
+            </h2>
+            <button
+              className="enter-btn"
+            >
+              ENTER
+            </button>
+          </div>,
+        ],
+        "className": "sun-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1
+                className="title-text"
+              >
+                BREAD
+              </h1>,
+              <h1
+                className="title-text"
+              >
+                &
+              </h1>,
+              <h1
+                className="title-text"
+              >
+                ROSES
+              </h1>,
+            ],
+            "className": "title-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "BREAD",
+                "className": "title-text",
+              },
+              "ref": null,
+              "rendered": "BREAD",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "&",
+                "className": "title-text",
+              },
+              "ref": null,
+              "rendered": "&",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "ROSES",
+                "className": "title-text",
+              },
+              "ref": null,
+              "rendered": "ROSES",
+              "type": "h1",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <b />,
+              <b />,
+              <b />,
+              <b />,
+              <b />,
+              <b />,
+              <b />,
+              <b />,
+              <b />,
+              <b />,
+            ],
+            "className": "outer",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "b",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "b",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "b",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "b",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "b",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "b",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "b",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "b",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "b",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "b",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <img
+                alt="star"
+                className="star"
+                src="back_star.png"
+              />,
+              <img
+                alt="fist"
+                className="fist"
+                src="power.svg"
+              />,
+            ],
+            "className": "star-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "star",
+                "className": "star",
+                "src": "back_star.png",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "fist",
+                "className": "fist",
+                "src": "power.svg",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "className": "back-foreground",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h2
+                className="subtitle"
+              >
+                What is Congress Doing for You?
+              </h2>,
+              <button
+                className="enter-btn"
+              >
+                ENTER
+              </button>,
+            ],
+            "className": "back-cover-layer",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "What is Congress Doing for You?",
+                "className": "subtitle",
+              },
+              "ref": null,
+              "rendered": "What is Congress Doing for You?",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "ENTER",
+                "className": "enter-btn",
+              },
+              "ref": null,
+              "rendered": "ENTER",
+              "type": "button",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
