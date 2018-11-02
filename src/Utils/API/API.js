@@ -7,4 +7,5 @@ export const getSenate = async () => {
   });
   const result = await response.json()
   console.log(result.results)
+  return result.results
 }

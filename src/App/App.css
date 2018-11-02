@@ -1,3 +1,8 @@
+body {
+  background-image: url('../Utils/Assets/Images/bnr_strike.jpg');
+  background-position: bottom 200px left 0;
+}
+
 .App {
   text-align: center;
 }
