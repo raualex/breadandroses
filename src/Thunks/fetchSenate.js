@@ -11,7 +11,13 @@ export const fetchSenate = () => {
       if (senateInfo) {
         dispatch(isLoading(false))
       }
-      dispatch(getSenateInfo(senateInfo))
+      const unresolvedPromises = senateInfo.map( async (member) => {
+        const contactInfo = await getMemberContact(member.id)
+        const newMember = Object.assign({}, member, contactInfo)
+        return newMember
+      })
+      const fullSenateInfo = await Promise.all(unresolvedPromises)
+      dispatch(getSenateInfo(fullSenateInfo))
     } catch (error) {
       console.log(error)
       dispatch(hasErrored(true))

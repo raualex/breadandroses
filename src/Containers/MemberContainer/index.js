@@ -8,9 +8,13 @@ const MemberContainer = (props) => {
     return (
       <div key={uuid()} className="senateMember">
         <ul>
-          <li>{senator.name}</li>
-          <li>{senator.party}</li>
-          <li>{senator.state}</li>
+          <li>Name: {senator.name}</li>
+          <li>Party: {senator.party}</li>
+          <li>State: {senator.state}</li>
+          <li>Official Website: {senator.website}</li>
+          <li>Twitter: {senator.twitter}</li>
+          <li>Facebook: {senator.facebook}</li>
+          <li>Phone: {senator.phone_number}</li>
         </ul>
       </div>
     )

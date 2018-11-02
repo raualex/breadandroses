@@ -26,5 +26,22 @@ export const getMemberContact = async (memberId) => {
     headers: {"X-API-Key": `${key}`}
   });
   const result = await response.json()
-  return result.results[0]
+  const memberContactInfo = result.results[0]
+  const cleanedContactInfo = {
+    website: memberContactInfo.url,
+    twitter: memberContactInfo.twitter_account,
+    facebook: memberContactInfo.facebook_account,
+    phone_number: memberContactInfo.roles[0].phone
+  }
+  return cleanedContactInfo
 }
+
+
+
+
+
+
+
+
+
+
