@@ -1,3 +1,38 @@
+.btn-container {
+
+}
+
 .header-bar {
-  
+  background-color: #CC2B1D;
+  border-bottom: solid 4px #000;
+  display: flex;
+  height: 150px;
+  justify-content: space-between;
+}
+
+.nav-fist {
+  height: 35px;
+  left: 33px;
+  position: absolute;
+  top: 41px;
+  width: 35px;
+  z-index: 2;
+}
+
+.nav-star {
+  height: 100px;
+  position: absolute;
+  right: 0;
+  width: 100px;
+  z-index: 1;
+}
+
+.nav-star-container {
+  background: radial-gradient(#fbe75d, #50241E);
+  border: solid 4px #000;
+  height: 100px;
+  position: relative;
+  right: 20px;
+  top: 20px;
+  width: 100px;
 }
