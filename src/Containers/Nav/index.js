@@ -3,8 +3,9 @@ import './Nav.css';
 import { NavLink } from 'react-router-dom'
 import star from '../../Utils/Assets/Images/back_star.png';
 import fist from '../../Utils/Assets/Images/power.svg';
+import { connect } from 'react-redux';
 
-const Nav = () => {
+const Nav = (props) => {
 
   return (
     <div className="header-bar">
@@ -39,4 +40,8 @@ const Nav = () => {
   )
 }
 
-export default Nav;
+const mapDispatchToProps = (dispatch) => {
+  
+}
+
+export default connect(null, mapDispatchToProps)(Nav);

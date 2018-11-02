@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Route, withRouter } from 'react-router-dom';
 import LandingPage from '../Components/LandingPage';
-import Nav from '../Components/Nav';
+import Nav from '../Containers/Nav';
 import './App.css';
 
 class App extends Component {
