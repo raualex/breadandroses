@@ -14,6 +14,16 @@ class App extends Component {
             <Nav />
           </div>
         )} />
+        <Route exact path='/senate' render={() => (
+          <div>
+            <Nav />
+          </div>
+        )} />
+        <Route exact path='/house' render={() => (
+          <div>
+            <Nav />
+          </div>
+        )} />
       </div>
     );
   }
