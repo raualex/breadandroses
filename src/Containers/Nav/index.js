@@ -9,9 +9,8 @@ import { fetchSenate } from '../../Thunks/fetchSenate';
 const Nav = (props) => {
 
   const handleClick = (event) => {
-    event.preventDefault()
-    console.log(props)
     let { name } = event.target
+
     if (name === 'senate') {
       props.fetchSenate()
       props.navAssign(name)

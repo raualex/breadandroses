@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Route, withRouter } from 'react-router-dom';
 import LandingPage from '../Components/LandingPage';
 import Nav from '../Containers/Nav';
+import MemberContainer from '../Containers/MemberContainer'
 import './App.css';
 
 class App extends Component {
@@ -29,6 +30,7 @@ class App extends Component {
         <Route exact path='/senate' render={() => (
           <div>
             <Nav navAssign={this.assignClickedNavBtn} />
+            <MemberContainer />
           </div>
         )} />
         <Route exact path='/house' render={() => (
