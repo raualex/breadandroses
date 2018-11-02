@@ -1,5 +1,8 @@
 .btn-container {
-
+  border: solid 4px #000;
+  height: 80px;
+  margin-top: 66px;
+  width: 700px;
 }
 
 .header-bar {
@@ -8,6 +11,31 @@
   display: flex;
   height: 150px;
   justify-content: space-between;
+}
+
+.house-btn {
+  border-left: solid 2px #000;
+}
+
+.senate-btn {
+  border-right: solid 2px #000;
+}
+
+.house-btn,
+.senate-btn {
+  background-color: #f4c076;
+  font-size: 2em;
+  font-weight: 700;
+  height: 100%;
+  width: 50%;
+}
+
+.house-link,
+.senate-link {
+  color: #000;
+  font-family: 'Black Han Sans', sans-serif;
+  font-weight: 400;
+  text-decoration: none;
 }
 
 .nav-fist {
@@ -33,6 +61,22 @@
   height: 100px;
   position: relative;
   right: 20px;
+  top: 20px;
+  width: 100px;
+}
+
+.nav-title {
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.nav-title-container {
+  background: radial-gradient(#fbe75d, #50241E);
+  border: solid 4px #000;
+  height: 100px;
+  position: relative;
+  left: 20px;
   top: 20px;
   width: 100px;
 }
