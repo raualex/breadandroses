@@ -10,12 +10,14 @@ const Nav = (props) => {
 
   const handleClick = (event) => {
     event.preventDefault()
-    console.log(event.target)
+    console.log(props)
     let { name } = event.target
     if (name === 'senate') {
       props.fetchSenate()
+      props.navAssign(name)
     } else if (name === 'house') {
       console.log(name)
+      props.navAssign(name)
     }
   }
 
@@ -42,6 +44,7 @@ const Nav = (props) => {
         <NavLink to='/house'
             name='house'
             className='house-link'
+            onClick={handleClick}
         >
           <button 
             className="house-btn"

@@ -7,6 +7,5 @@ export const getSenate = async () => {
     headers: {"X-API-Key": `${key}`}
   });
   const result = await response.json()
-  console.log(result.results[0])
   return result.results[0].current_members
 }

@@ -19,7 +19,6 @@ export const hasErrored = (state = false, action) => {
 export const senateCommittee = (state = [], action) => {
   switch (action.type) {
     case "GET_SENATE":
-      console.log('reducer')
       return [...action.senateMembers]
     default:
       return state;

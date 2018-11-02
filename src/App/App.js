@@ -5,23 +5,35 @@ import Nav from '../Containers/Nav';
 import './App.css';
 
 class App extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      navClicked: ''
+    }
+  }
+
+  assignClickedNavBtn = (str) => {
+    this.setState({ navClicked: str })
+  }
+
   render() {
     return (
       <div className="App">
         <Route exact path='/' component={LandingPage} />
         <Route exact path='/welcome' render={() => (
           <div>
-            <Nav />
+            <Nav navAssign={this.assignClickedNavBtn} />
           </div>
         )} />
         <Route exact path='/senate' render={() => (
           <div>
-            <Nav />
+            <Nav navAssign={this.assignClickedNavBtn} />
           </div>
         )} />
         <Route exact path='/house' render={() => (
           <div>
-            <Nav />
+            <Nav navAssign={this.assignClickedNavBtn} />
           </div>
         )} />
       </div>
