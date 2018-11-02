@@ -5,8 +5,16 @@ import { getSenate } from '../Utils/API/API';
 export const fetchSenate = () => {
   console.log('thunk')
   return async (dispatch) => {
-    dispatch(isLoading(true))
-    const senateInfo = await getSenate()
-    dispatch(getSenateInfo(senateInfo))
+    try {
+      dispatch(isLoading(true))
+      const senateInfo = await getSenate()
+      if (senateInfo) {
+        dispatch(isLoading(false))
+      }
+      dispatch(getSenateInfo(senateInfo))
+    } catch (error) {
+      console.log(error)
+      dispatch(hasErrored(true))
+    }
   }
 }

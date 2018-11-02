@@ -20,7 +20,7 @@ export const senateCommittee = (state = [], action) => {
   switch (action.type) {
     case "GET_SENATE":
       console.log('reducer')
-      return [...state, action.senateMembers]
+      return [...action.senateMembers]
     default:
       return state;
   }
