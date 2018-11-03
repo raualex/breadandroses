@@ -7,19 +7,7 @@ import { connect } from 'react-redux';
 import { fetchSenate } from '../../Thunks/fetchSenate';
 import { fetchHouse } from '../../Thunks/fetchHouse';
 
-const Nav = (props) => {
-
-  const handleClick = (event) => {
-    let { name } = event.target
-
-    if (name === 'senate') {
-      props.fetchSenate()
-      props.navAssign(name)
-    } else if (name === 'house') {
-      props.fetchHouse()
-      props.navAssign(name)
-    }
-  }
+export const Nav = (props) => {
 
   return (
     <div className="header-bar">
@@ -32,7 +20,7 @@ const Nav = (props) => {
         <NavLink to='/senate'
           name='senate'
           className='senate-link'
-          onClick={handleClick}
+          onClick={props.fetchSenate}
         >
           <button 
             className="senate-btn"
@@ -44,7 +32,7 @@ const Nav = (props) => {
         <NavLink to='/house'
             name='house'
             className='house-link'
-            onClick={handleClick}
+            onClick={props.fetchHouse}
         >
           <button 
             className="house-btn"
@@ -62,7 +50,7 @@ const Nav = (props) => {
   )
 }
 
-const mapDispatchToProps = (dispatch) => ({
+export const mapDispatchToProps = (dispatch) => ({
   fetchSenate: () => dispatch(fetchSenate()),
   fetchHouse: () => dispatch(fetchHouse())
 })

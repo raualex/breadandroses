@@ -1,0 +1,837 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MemberContainer matches the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <MemberContainer
+    congress={
+      Array [
+        Object {
+          "facebook": "sanders",
+          "name": "Bernie Sanders",
+          "party": "I",
+          "phone_number": "555-5555",
+          "state": "VT",
+          "twitter": "sanders",
+          "website": "www.sanders.org",
+        },
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="member"
+        >
+          <img
+            alt="Bernie Sanders"
+          />
+          <ul
+            className="member-list"
+          >
+            <li>
+              Name:
+            </li>
+            <li>
+              Bernie Sanders
+            </li>
+            <li>
+              Party:
+            </li>
+            <li>
+              I
+            </li>
+            <li>
+              State:
+            </li>
+            <li>
+              VT
+            </li>
+            <li>
+              Official Website:
+            </li>
+            <li>
+              www.sanders.org
+            </li>
+            <li
+              className="show"
+            >
+              Twitter:
+            </li>
+            <li
+              className="show"
+            >
+              sanders
+            </li>
+            <li
+              className="show"
+            >
+              Facebook:
+            </li>
+            <li
+              className="show"
+            >
+              sanders
+            </li>
+            <li
+              className="show"
+            >
+              Phone:
+            </li>
+            <li
+              className="show"
+            >
+              555-5555
+            </li>
+          </ul>
+        </div>,
+      ],
+      "className": "members-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "1",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <img
+              alt="Bernie Sanders"
+            />,
+            <ul
+              className="member-list"
+            >
+              <li>
+                Name:
+              </li>
+              <li>
+                Bernie Sanders
+              </li>
+              <li>
+                Party:
+              </li>
+              <li>
+                I
+              </li>
+              <li>
+                State:
+              </li>
+              <li>
+                VT
+              </li>
+              <li>
+                Official Website:
+              </li>
+              <li>
+                www.sanders.org
+              </li>
+              <li
+                className="show"
+              >
+                Twitter:
+              </li>
+              <li
+                className="show"
+              >
+                sanders
+              </li>
+              <li
+                className="show"
+              >
+                Facebook:
+              </li>
+              <li
+                className="show"
+              >
+                sanders
+              </li>
+              <li
+                className="show"
+              >
+                Phone:
+              </li>
+              <li
+                className="show"
+              >
+                555-5555
+              </li>
+            </ul>,
+          ],
+          "className": "member",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "Bernie Sanders",
+              "src": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <li>
+                  Name:
+                </li>,
+                <li>
+                  Bernie Sanders
+                </li>,
+                <li>
+                  Party:
+                </li>,
+                <li>
+                  I
+                </li>,
+                <li>
+                  State:
+                </li>,
+                <li>
+                  VT
+                </li>,
+                <li>
+                  Official Website:
+                </li>,
+                <li>
+                  www.sanders.org
+                </li>,
+                <li
+                  className="show"
+                >
+                  Twitter:
+                </li>,
+                <li
+                  className="show"
+                >
+                  sanders
+                </li>,
+                <li
+                  className="show"
+                >
+                  Facebook:
+                </li>,
+                <li
+                  className="show"
+                >
+                  sanders
+                </li>,
+                <li
+                  className="show"
+                >
+                  Phone:
+                </li>,
+                <li
+                  className="show"
+                >
+                  555-5555
+                </li>,
+              ],
+              "className": "member-list",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Name:",
+                },
+                "ref": null,
+                "rendered": "Name:",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Bernie Sanders",
+                },
+                "ref": null,
+                "rendered": "Bernie Sanders",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Party:",
+                },
+                "ref": null,
+                "rendered": "Party:",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "I",
+                },
+                "ref": null,
+                "rendered": "I",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "State:",
+                },
+                "ref": null,
+                "rendered": "State:",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "VT",
+                },
+                "ref": null,
+                "rendered": "VT",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Official Website:",
+                },
+                "ref": null,
+                "rendered": "Official Website:",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "www.sanders.org",
+                },
+                "ref": null,
+                "rendered": "www.sanders.org",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Twitter:",
+                  "className": "show",
+                },
+                "ref": null,
+                "rendered": "Twitter:",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "sanders",
+                  "className": "show",
+                },
+                "ref": null,
+                "rendered": "sanders",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Facebook:",
+                  "className": "show",
+                },
+                "ref": null,
+                "rendered": "Facebook:",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "sanders",
+                  "className": "show",
+                },
+                "ref": null,
+                "rendered": "sanders",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Phone:",
+                  "className": "show",
+                },
+                "ref": null,
+                "rendered": "Phone:",
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "555-5555",
+                  "className": "show",
+                },
+                "ref": null,
+                "rendered": "555-5555",
+                "type": "li",
+              },
+            ],
+            "type": "ul",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="member"
+          >
+            <img
+              alt="Bernie Sanders"
+            />
+            <ul
+              className="member-list"
+            >
+              <li>
+                Name:
+              </li>
+              <li>
+                Bernie Sanders
+              </li>
+              <li>
+                Party:
+              </li>
+              <li>
+                I
+              </li>
+              <li>
+                State:
+              </li>
+              <li>
+                VT
+              </li>
+              <li>
+                Official Website:
+              </li>
+              <li>
+                www.sanders.org
+              </li>
+              <li
+                className="show"
+              >
+                Twitter:
+              </li>
+              <li
+                className="show"
+              >
+                sanders
+              </li>
+              <li
+                className="show"
+              >
+                Facebook:
+              </li>
+              <li
+                className="show"
+              >
+                sanders
+              </li>
+              <li
+                className="show"
+              >
+                Phone:
+              </li>
+              <li
+                className="show"
+              >
+                555-5555
+              </li>
+            </ul>
+          </div>,
+        ],
+        "className": "members-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "1",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <img
+                alt="Bernie Sanders"
+              />,
+              <ul
+                className="member-list"
+              >
+                <li>
+                  Name:
+                </li>
+                <li>
+                  Bernie Sanders
+                </li>
+                <li>
+                  Party:
+                </li>
+                <li>
+                  I
+                </li>
+                <li>
+                  State:
+                </li>
+                <li>
+                  VT
+                </li>
+                <li>
+                  Official Website:
+                </li>
+                <li>
+                  www.sanders.org
+                </li>
+                <li
+                  className="show"
+                >
+                  Twitter:
+                </li>
+                <li
+                  className="show"
+                >
+                  sanders
+                </li>
+                <li
+                  className="show"
+                >
+                  Facebook:
+                </li>
+                <li
+                  className="show"
+                >
+                  sanders
+                </li>
+                <li
+                  className="show"
+                >
+                  Phone:
+                </li>
+                <li
+                  className="show"
+                >
+                  555-5555
+                </li>
+              </ul>,
+            ],
+            "className": "member",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "Bernie Sanders",
+                "src": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <li>
+                    Name:
+                  </li>,
+                  <li>
+                    Bernie Sanders
+                  </li>,
+                  <li>
+                    Party:
+                  </li>,
+                  <li>
+                    I
+                  </li>,
+                  <li>
+                    State:
+                  </li>,
+                  <li>
+                    VT
+                  </li>,
+                  <li>
+                    Official Website:
+                  </li>,
+                  <li>
+                    www.sanders.org
+                  </li>,
+                  <li
+                    className="show"
+                  >
+                    Twitter:
+                  </li>,
+                  <li
+                    className="show"
+                  >
+                    sanders
+                  </li>,
+                  <li
+                    className="show"
+                  >
+                    Facebook:
+                  </li>,
+                  <li
+                    className="show"
+                  >
+                    sanders
+                  </li>,
+                  <li
+                    className="show"
+                  >
+                    Phone:
+                  </li>,
+                  <li
+                    className="show"
+                  >
+                    555-5555
+                  </li>,
+                ],
+                "className": "member-list",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Name:",
+                  },
+                  "ref": null,
+                  "rendered": "Name:",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Bernie Sanders",
+                  },
+                  "ref": null,
+                  "rendered": "Bernie Sanders",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Party:",
+                  },
+                  "ref": null,
+                  "rendered": "Party:",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "I",
+                  },
+                  "ref": null,
+                  "rendered": "I",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "State:",
+                  },
+                  "ref": null,
+                  "rendered": "State:",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "VT",
+                  },
+                  "ref": null,
+                  "rendered": "VT",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Official Website:",
+                  },
+                  "ref": null,
+                  "rendered": "Official Website:",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "www.sanders.org",
+                  },
+                  "ref": null,
+                  "rendered": "www.sanders.org",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Twitter:",
+                    "className": "show",
+                  },
+                  "ref": null,
+                  "rendered": "Twitter:",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "sanders",
+                    "className": "show",
+                  },
+                  "ref": null,
+                  "rendered": "sanders",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Facebook:",
+                    "className": "show",
+                  },
+                  "ref": null,
+                  "rendered": "Facebook:",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "sanders",
+                    "className": "show",
+                  },
+                  "ref": null,
+                  "rendered": "sanders",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Phone:",
+                    "className": "show",
+                  },
+                  "ref": null,
+                  "rendered": "Phone:",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "555-5555",
+                    "className": "show",
+                  },
+                  "ref": null,
+                  "rendered": "555-5555",
+                  "type": "li",
+                },
+              ],
+              "type": "ul",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

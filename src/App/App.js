@@ -3,20 +3,12 @@ import { Route, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import LandingPage from '../Components/LandingPage';
 import Nav from '../Containers/Nav';
-import MemberContainer from '../Containers/MemberContainer'
+import MemberContainer from '../Components/MemberContainer'
 import './App.css';
 
-class App extends Component {
+export class App extends Component {
   constructor(props) {
     super();
-
-    this.state = {
-      navClicked: ''
-    }
-  }
-
-  assignClickedNavBtn = (str) => {
-    this.setState({ navClicked: str })
   }
 
   render() {
@@ -25,18 +17,18 @@ class App extends Component {
         <Route exact path='/' component={LandingPage} />
         <Route exact path='/welcome' render={() => (
           <div>
-            <Nav navAssign={this.assignClickedNavBtn} />
+            <Nav />
           </div>
         )} />
         <Route exact path='/senate' render={() => (
           <div>
-            <Nav navAssign={this.assignClickedNavBtn} />
+            <Nav />
             <MemberContainer congress={this.props.senate}/>
           </div>
         )} />
         <Route exact path='/house' render={() => (
           <div>
-            <Nav navAssign={this.assignClickedNavBtn} />
+            <Nav />
             <MemberContainer congress={this.props.house}/>
           </div>
         )} />
@@ -45,7 +37,7 @@ class App extends Component {
   }
 }
 
-const mapStateToProps = (state) => ({
+export const mapStateToProps = (state) => ({
   senate: state.senateMembers,
   house: state.houseMembers
 })
