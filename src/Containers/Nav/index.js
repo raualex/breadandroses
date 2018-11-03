@@ -5,6 +5,7 @@ import star from '../../Utils/Assets/Images/back_star.png';
 import fist from '../../Utils/Assets/Images/power.svg';
 import { connect } from 'react-redux';
 import { fetchSenate } from '../../Thunks/fetchSenate';
+import { fetchHouse } from '../../Thunks/fetchHouse';
 
 const Nav = (props) => {
 
@@ -15,7 +16,7 @@ const Nav = (props) => {
       props.fetchSenate()
       props.navAssign(name)
     } else if (name === 'house') {
-      console.log(name)
+      props.fetchHouse()
       props.navAssign(name)
     }
   }
@@ -62,7 +63,8 @@ const Nav = (props) => {
 }
 
 const mapDispatchToProps = (dispatch) => ({
-  fetchSenate: () => dispatch(fetchSenate())
+  fetchSenate: () => dispatch(fetchSenate()),
+  fetchHouse: () => dispatch(fetchHouse())
 })
 
 export default connect(null, mapDispatchToProps)(Nav);

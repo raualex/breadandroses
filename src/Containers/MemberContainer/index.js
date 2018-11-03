@@ -5,24 +5,24 @@ import uuid from 'uuid';
 
 const MemberContainer = (props) => {
 
-  const members = props.senate.map((senator) => {
+  const members = props.congress.map((person) => {
     return (
       <div key={uuid()} className="member">
         <ul className="member-list">
           <li>Name:</li>
-          <li>{senator.name}</li>
+          <li>{person.name}</li>
           <li>Party:</li>
-          <li>{senator.party}</li>
+          <li>{person.party}</li>
           <li>State:</li>
-          <li>{senator.state}</li>
+          <li>{person.state}</li>
           <li>Official Website:</li>
-          <li>{senator.website}</li>
-          <li className={(senator.twitter ? 'show' : 'hidden')}>Twitter:</li>
-          <li className={(senator.twitter ? 'show' : 'hidden')}>{senator.twitter}</li>
-          <li className={(senator.facebook ? 'show' : 'hidden')}>Facebook:</li>
-          <li className={(senator.facebook ? 'show' : 'hidden')}>{senator.facebook}</li>
-          <li className={(senator.phone_number ? 'show' : 'hidden')}>Phone:</li>
-          <li className={(senator.phone_number ? 'show' : 'hidden')}>{senator.phone_number}</li>
+          <li>{person.website}</li>
+          <li className={(person.twitter ? 'show' : 'hidden')}>Twitter:</li>
+          <li className={(person.twitter ? 'show' : 'hidden')}>{person.twitter}</li>
+          <li className={(person.facebook ? 'show' : 'hidden')}>Facebook:</li>
+          <li className={(person.facebook ? 'show' : 'hidden')}>{person.facebook}</li>
+          <li className={(person.phone_number ? 'show' : 'hidden')}>Phone:</li>
+          <li className={(person.phone_number ? 'show' : 'hidden')}>{person.phone_number}</li>
         </ul>
       </div>
     )
@@ -37,7 +37,8 @@ const MemberContainer = (props) => {
 }
 
 const mapStateToProps = (state) => ({
-  senate: state.senateMembers
+  senate: state.senateMembers,
+  house: state.houseMembers
 })
 
 export default connect(mapStateToProps)(MemberContainer);
