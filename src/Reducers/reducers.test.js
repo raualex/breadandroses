@@ -51,7 +51,7 @@ describe('Senate reducers', () => {
     const mockSenate = {
       type: "GET_SENATE",
       senateMembers : [
-        { name: 'Bernie Sanders', party: 'I', state: 'VT'}
+        { name: 'Bernie Sanders', party: 'I', state: 'VT' }
       ]
     }
 
@@ -62,7 +62,7 @@ describe('Senate reducers', () => {
   it('should return original state as a default', () => {
     const mockSenate = {
       senateMembers : [
-        { name: 'Bernie Sanders', party: 'I', state: 'VT'}
+        { name: 'Bernie Sanders', party: 'I', state: 'VT' }
       ]
     }
 
@@ -77,7 +77,7 @@ describe('House reducers', () => {
     const mockHouse = {
       type: "GET_HOUSE",
       houseMembers : [
-        { name: 'Jared Polis', party: 'D', state: 'CO'}
+        { name: 'Jared Polis', party: 'D', state: 'CO' }
       ]
     }
 
@@ -88,7 +88,7 @@ describe('House reducers', () => {
   it('should return original state as a default', () => {
     const mockHouse = {
       houseMembers : [
-        { name: 'Jared Polis', party: 'D', state: 'CO'}
+        { name: 'Jared Polis', party: 'D', state: 'CO' }
       ]
     }
 
