@@ -3,8 +3,23 @@ import './Nav.css';
 import { NavLink } from 'react-router-dom'
 import star from '../../Utils/Assets/Images/back_star.png';
 import fist from '../../Utils/Assets/Images/power.svg';
+import { connect } from 'react-redux';
+import { fetchSenate } from '../../Thunks/fetchSenate';
+import { fetchHouse } from '../../Thunks/fetchHouse';
 
-const Nav = () => {
+const Nav = (props) => {
+
+  const handleClick = (event) => {
+    let { name } = event.target
+
+    if (name === 'senate') {
+      props.fetchSenate()
+      props.navAssign(name)
+    } else if (name === 'house') {
+      props.fetchHouse()
+      props.navAssign(name)
+    }
+  }
 
   return (
     <div className="header-bar">
@@ -17,16 +32,24 @@ const Nav = () => {
         <NavLink to='/senate'
           name='senate'
           className='senate-link'
+          onClick={handleClick}
         >
-          <button className="senate-btn">
+          <button 
+            className="senate-btn"
+            name='senate'
+          >
             SENATE
           </button>
         </NavLink>
         <NavLink to='/house'
             name='house'
             className='house-link'
+            onClick={handleClick}
         >
-          <button className="house-btn">
+          <button 
+            className="house-btn"
+            name='house'
+          >
             HOUSE
           </button>
         </NavLink>
@@ -39,4 +62,9 @@ const Nav = () => {
   )
 }
 
-export default Nav;
+const mapDispatchToProps = (dispatch) => ({
+  fetchSenate: () => dispatch(fetchSenate()),
+  fetchHouse: () => dispatch(fetchHouse())
+})
+
+export default connect(null, mapDispatchToProps)(Nav);

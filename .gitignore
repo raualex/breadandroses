@@ -7,7 +7,7 @@
 # misc
 .DS_Store
 .env
-APIkey.js
+/src/Utils/API/key.js
 
 # logs
 *.log
