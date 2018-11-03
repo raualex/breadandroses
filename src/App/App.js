@@ -36,6 +36,7 @@ class App extends Component {
         <Route exact path='/house' render={() => (
           <div>
             <Nav navAssign={this.assignClickedNavBtn} />
+            <MemberContainer />
           </div>
         )} />
       </div>
