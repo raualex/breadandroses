@@ -10,6 +10,14 @@ import './App.css';
 export class App extends Component {
   constructor(props) {
     super();
+
+    this.state = {
+      navClicked: ''
+    }
+  }
+
+  determineNavClicked = (event) => {
+    this.setState({ navClicked: event.target.name })
   }
 
   render() {
@@ -18,20 +26,26 @@ export class App extends Component {
         <Route exact path='/' component={LandingPage} />
         <Route exact path='/welcome' render={() => (
           <div>
-            <Nav />
+            <Nav navAssign={this.determineNavClicked} />
             <Loading />
           </div>
         )} />
         <Route exact path='/senate' render={() => (
           <div>
-            <Nav />
-            <MemberContainer congress={this.props.senate}/>
+            <Nav navAssign={this.determineNavClicked} />
+            <MemberContainer 
+              congress={this.props.senate} 
+              navClicked={this.state.navClicked} 
+            />
           </div>
         )} />
         <Route exact path='/house' render={() => (
           <div>
-            <Nav />
-            <MemberContainer congress={this.props.house}/>
+            <Nav navAssign={this.determineNavClicked} />
+            <MemberContainer 
+              congress={this.props.house}
+              navClicked={this.state.navClicked} 
+            />
           </div>
         )} />
       </div>

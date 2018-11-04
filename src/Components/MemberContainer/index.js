@@ -5,11 +5,23 @@ import uuid from 'uuid';
 
 const MemberContainer = (props) => {
 
+  let title;
+
+  if (props.navClicked === 'senate') {
+    title = <h1>Committee on Health, Education, Labor, and Pensions</h1>
+  } else if (props.navClicked === 'house') {
+    title = <h1>Committee on Education and the Workforce</h1>
+  }
+
   const members = props.congress.map((person) => {
     
     return (
-      <div key={uuid()} className="member">
-        <img src={cardImages[person.name]} alt={person.name}/>
+      <div key={uuid()} className={person.party}>
+        <img 
+          src={cardImages[person.name]} 
+          alt={person.name} 
+          className="politician"
+        />
         <ul className="member-list">
           <li>Name:</li>
           <li>{person.name}</li>
@@ -31,8 +43,12 @@ const MemberContainer = (props) => {
   })
 
   return (
-    <div className="members-container">
-      { members }
+    <div>
+      { title }
+      <div className="members-container">
+        { members }
+      </div>
+      <input type='dataset' />
     </div>
   )
 

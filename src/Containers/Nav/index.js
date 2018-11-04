@@ -25,6 +25,7 @@ export const Nav = (props) => {
           <button 
             className="senate-btn"
             name='senate'
+            onClick={props.navAssign}
           >
             SENATE
           </button>
@@ -37,6 +38,7 @@ export const Nav = (props) => {
           <button 
             className="house-btn"
             name='house'
+            onClick={props.navAssign}
           >
             HOUSE
           </button>

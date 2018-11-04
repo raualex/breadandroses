@@ -2,17 +2,33 @@
   display: none;
 }
 
-.member {
+.R,
+.D,
+.I {
   background-color: rgba(243,243,243,0.8);
   border-radius: 48px;
   flex: 0 0 auto;
+  height: 676px;
   margin: 8px;
   padding: 4px;
+  width: 294px;
+}
+
+.D {
+  border: solid 6px blue;
+}
+
+.I {
+  border: solid 6px yellow;
+}
+
+.R {
+  border: solid 6px red;
 }
 
 .members-container {
   display: flex;
-  height: 500px;
+  height: 720px;
   flex-wrap: nowrap;
   overflow-x: auto;
 }
@@ -20,4 +36,8 @@
 .member-list {
   list-style-type: none;
   padding: 0;
+}
+
+.politician {
+  border-radius: 48px; 
 }
