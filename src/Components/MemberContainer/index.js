@@ -8,9 +8,9 @@ const MemberContainer = (props) => {
   let title;
 
   if (props.navClicked === 'senate') {
-    title = <h1>Committee on Health, Education, Labor, and Pensions</h1>
+    title = <h1 className="committee-title">Committee on Health, Education, Labor, and Pensions</h1>
   } else if (props.navClicked === 'house') {
-    title = <h1>Committee on Education and the Workforce</h1>
+    title = <h1 className="committee-title">Committee on Education and the Workforce</h1>
   }
 
   const members = props.congress.map((person) => {
