@@ -5,6 +5,7 @@ import LandingPage from '../Components/LandingPage';
 import Nav from '../Containers/Nav';
 import MemberContainer from '../Components/MemberContainer';
 import Loading from '../Components/Loading';
+import HearingsContainer from '../Containers/HearingsContainer';
 import { filterSenate } from '../Actions/senate-actions';
 import { filterHouse } from '../Actions/house-actions';
 import { fetchSenate } from '../Thunks/fetchSenate';
@@ -60,6 +61,7 @@ export class App extends Component {
               filterState={this.filterCongress} 
               resetFilter={this.resetCongress}
             />
+            <HearingsContainer navClicked={this.state.navClicked} />
           </div>
         )} />
         <Route exact path='/house' render={() => (
@@ -71,6 +73,7 @@ export class App extends Component {
               filterState={this.filterCongress}
               resetFilter={this.resetCongress}
             />
+            <HearingsContainer navClicked={this.state.navClicked} />
           </div>
         )} />
       </div>
