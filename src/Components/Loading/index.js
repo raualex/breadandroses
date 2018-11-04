@@ -7,9 +7,6 @@ const Loading = () => {
 
   return (
     <div className="sun-container2">
-      <div className="outer2">
-        <b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b>
-      </div>
       <div className="star-container2">
         <img src={star} className="star2" alt="star" />
         <img src={fist} className="fist2" alt="fist" />
