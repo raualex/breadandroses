@@ -1,6 +1,7 @@
 import { isLoading, hasErrored } from '../Actions';
 import { getSenateInfo } from '../Actions/senate-actions'
 import { getSenate, getMemberContact } from '../Utils/API/API';
+import { fetchSHearings } from './senateHearings';
 
 export const fetchSenate = () => {
 
@@ -18,6 +19,7 @@ export const fetchSenate = () => {
       })
       const fullSenateInfo = await Promise.all(unresolvedPromises)
       dispatch(getSenateInfo(fullSenateInfo))
+      dispatch(fetchSHearings())
     } catch (error) {
       console.log(error)
       dispatch(hasErrored(true))

@@ -7,6 +7,8 @@ import MemberContainer from '../Components/MemberContainer';
 import Loading from '../Components/Loading';
 import { filterSenate } from '../Actions/senate-actions';
 import { filterHouse } from '../Actions/house-actions';
+import { fetchSenate } from '../Thunks/fetchSenate';
+import { fetchHouse } from '../Thunks/fetchHouse';
 import './App.css';
 
 export class App extends Component {
@@ -24,12 +26,19 @@ export class App extends Component {
 
   filterCongress = (state) => {
     let { navClicked } = this.state
+    let { filterSenate, filterHouse } = this.props
 
     if (navClicked === 'senate') {
-      this.props.filterSenate(state)
+      filterSenate(state)
     } else if (navClicked === 'house') {
-      this.props.filterHouse(state)
+      filterHouse(state)
     }
+  }
+
+  resetCongress = () => {
+    let { fetchSenate, fetchHouse } = this.props
+    fetchSenate()
+    fetchHouse()
   }
 
   render() {
@@ -49,6 +58,7 @@ export class App extends Component {
               congress={this.props.senate} 
               navClicked={this.state.navClicked}
               filterState={this.filterCongress} 
+              resetFilter={this.resetCongress}
             />
           </div>
         )} />
@@ -59,6 +69,7 @@ export class App extends Component {
               congress={this.props.house}
               navClicked={this.state.navClicked} 
               filterState={this.filterCongress}
+              resetFilter={this.resetCongress}
             />
           </div>
         )} />
@@ -74,7 +85,9 @@ export const mapStateToProps = (state) => ({
 
 export const mapDispatchToProps = (dispatch) => ({
   filterSenate: (state) => dispatch(filterSenate(state)),
-  filterHouse: (state) => dispatch(filterHouse(state))
+  filterHouse: (state) => dispatch(filterHouse(state)),
+  fetchSenate: () => dispatch(fetchSenate()),
+  fetchHouse: () => dispatch(fetchHouse())
 })
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));

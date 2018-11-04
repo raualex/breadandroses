@@ -1,6 +1,7 @@
 import { isLoading, hasErrored } from '../Actions';
 import { getHouseInfo } from '../Actions/house-actions'
 import { getHouse, getMemberContact } from '../Utils/API/API';
+import { fetchHHearings } from './houseHearings';
 
 export const fetchHouse = () => {
 
@@ -18,6 +19,7 @@ export const fetchHouse = () => {
       })
       const fullHouseInfo = await Promise.all(unresolvedPromises)
       dispatch(getHouseInfo(fullHouseInfo))
+      dispatch(fetchHHearings())
     } catch (error) {
       console.log(error)
       dispatch(hasErrored(true))

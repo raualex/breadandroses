@@ -55,9 +55,41 @@ export const getMemberContact = async (memberId) => {
   return cleanedContactInfo
 }
 
+export const fetchSenateHearings = async () => {
 
+  const response = await fetch(`https://api.propublica.org/congress/v1/115/senate/committees/SSHR/hearings.json`, {
+    method: "GET",
+    headers: {"X-API-Key": `${key}`}   
+  });
+  const result = await response.json()
+  const hearings = result.results[0]
+  const cleanedHearings = hearings.hearings.map((hearing) => {
+    return {
+      title: hearing.description,
+      url: 'none'
+    }
+  })
+  console.log(cleanedHearings)
+  return cleanedHearings
+}
 
+export const fetchHouseHearings = async () => {
 
+  const response = await fetch(`https://api.propublica.org/congress/v1/115/house/committees/HSED/hearings.json`, {
+    method: "GET",
+    headers: {"X-API-Key": `${key}`}   
+  });
+  const result = await response.json()
+  const hearings = result.results[0]
+  const cleanedHearings = hearings.hearings.map((hearing) => {
+    return {
+      title: hearing.description,
+      url: hearing.url
+    }
+  })
+  console.log(cleanedHearings)
+  return cleanedHearings
+}
 
 
 

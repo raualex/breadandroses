@@ -7,3 +7,8 @@ export const filterSenate = (state) => ({
   type: "FILTER_SENATE",
   state: state
 })
+
+export const getSenateHearings = (hearingsList) => ({
+  type: "GET_SENATE_HEARINGS",
+  senateHearings: hearingsList
+})

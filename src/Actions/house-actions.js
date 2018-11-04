@@ -7,3 +7,8 @@ export const filterHouse = (state) => ({
   type: "FILTER_HOUSE",
   state: state
 })
+
+export const getHouseHearings = (hearingsList) => ({
+  type: "GET_HOUSE_HEARINGS",
+  houseHearings: hearingsList
+})
