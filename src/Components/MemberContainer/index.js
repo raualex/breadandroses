@@ -1,13 +1,15 @@
 import React from 'react';
-import { connect } from 'react-redux';
+import cardImages from '../../Utils/cardImages'
 import './MemberContainer.css'
 import uuid from 'uuid';
 
 const MemberContainer = (props) => {
 
   const members = props.congress.map((person) => {
+    
     return (
       <div key={uuid()} className="member">
+        <img src={cardImages[person.name]} alt={person.name}/>
         <ul className="member-list">
           <li>Name:</li>
           <li>{person.name}</li>
@@ -36,9 +38,4 @@ const MemberContainer = (props) => {
 
 }
 
-const mapStateToProps = (state) => ({
-  senate: state.senateMembers,
-  house: state.houseMembers
-})
-
-export default connect(mapStateToProps)(MemberContainer);
+export default MemberContainer;
