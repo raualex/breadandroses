@@ -5,6 +5,8 @@ import LandingPage from '../Components/LandingPage';
 import Nav from '../Containers/Nav';
 import MemberContainer from '../Components/MemberContainer';
 import Loading from '../Components/Loading';
+import { filterSenate } from '../Actions/senate-actions';
+import { filterHouse } from '../Actions/house-actions';
 import './App.css';
 
 export class App extends Component {
@@ -18,6 +20,16 @@ export class App extends Component {
 
   determineNavClicked = (event) => {
     this.setState({ navClicked: event.target.name })
+  }
+
+  filterCongress = (state) => {
+    let { navClicked } = this.state
+
+    if (navClicked === 'senate') {
+      this.props.filterSenate(state)
+    } else if (navClicked === 'house') {
+      this.props.filterHouse(state)
+    }
   }
 
   render() {
@@ -35,7 +47,8 @@ export class App extends Component {
             <Nav navAssign={this.determineNavClicked} />
             <MemberContainer 
               congress={this.props.senate} 
-              navClicked={this.state.navClicked} 
+              navClicked={this.state.navClicked}
+              filterState={this.filterCongress} 
             />
           </div>
         )} />
@@ -45,6 +58,7 @@ export class App extends Component {
             <MemberContainer 
               congress={this.props.house}
               navClicked={this.state.navClicked} 
+              filterState={this.filterCongress}
             />
           </div>
         )} />
@@ -58,4 +72,9 @@ export const mapStateToProps = (state) => ({
   house: state.houseMembers
 })
 
-export default withRouter(connect(mapStateToProps)(App));
+export const mapDispatchToProps = (dispatch) => ({
+  filterSenate: (state) => dispatch(filterSenate(state)),
+  filterHouse: (state) => dispatch(filterHouse(state))
+})
+
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));

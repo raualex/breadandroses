@@ -1,57 +1,83 @@
-import React from 'react';
+import React, { Component } from 'react';
 import cardImages from '../../Utils/cardImages'
+import stateList from '../../Utils/stateList'
 import './MemberContainer.css'
 import uuid from 'uuid';
 
-const MemberContainer = (props) => {
-
-  let title;
-
-  if (props.navClicked === 'senate') {
-    title = <h1 className="committee-title">Committee on Health, Education, Labor, and Pensions</h1>
-  } else if (props.navClicked === 'house') {
-    title = <h1 className="committee-title">Committee on Education and the Workforce</h1>
+class MemberContainer extends Component {
+  constructor(props) {
+    super();
   }
 
-  const members = props.congress.map((person) => {
+  handleChange = (event) => {
+    let state = event.target.value
+    this.props.filterState(state.slice(-2))
+  }
+
+  render() {
+    let title;
+
+    if (this.props.navClicked === 'senate') {
+      title = <h1 className="committee-title">Committee on Health, Education, Labor, and Pensions</h1>
+    } else if (this.props.navClicked === 'house') {
+      title = <h1 className="committee-title">Committee on Education and the Workforce</h1>
+    }
     
+    const members = this.props.congress.map((person) => {
+    
+      return (
+        <div key={uuid()} className={person.party}>
+          <img 
+            src={cardImages[person.name]} 
+            alt={person.name} 
+            className="politician"
+          />
+          <ul className="member-list">
+            <li>Name:</li>
+            <li>{person.name}</li>
+            <li>Party:</li>
+            <li>{person.party}</li>
+            <li>State:</li>
+            <li>{person.state}</li>
+            <li>Official Website:</li>
+            <li>{person.website}</li>
+            <li className={(person.twitter ? 'show' : 'hidden')}>Twitter:</li>
+            <li className={(person.twitter ? 'show' : 'hidden')}>{person.twitter}</li>
+            <li className={(person.facebook ? 'show' : 'hidden')}>Facebook:</li>
+            <li className={(person.facebook ? 'show' : 'hidden')}>{person.facebook}</li>
+            <li className={(person.phone_number ? 'show' : 'hidden')}>Phone:</li>
+            <li className={(person.phone_number ? 'show' : 'hidden')}>{person.phone_number}</li>
+          </ul>
+        </div>
+      )
+    })
+
     return (
-      <div key={uuid()} className={person.party}>
-        <img 
-          src={cardImages[person.name]} 
-          alt={person.name} 
-          className="politician"
-        />
-        <ul className="member-list">
-          <li>Name:</li>
-          <li>{person.name}</li>
-          <li>Party:</li>
-          <li>{person.party}</li>
-          <li>State:</li>
-          <li>{person.state}</li>
-          <li>Official Website:</li>
-          <li>{person.website}</li>
-          <li className={(person.twitter ? 'show' : 'hidden')}>Twitter:</li>
-          <li className={(person.twitter ? 'show' : 'hidden')}>{person.twitter}</li>
-          <li className={(person.facebook ? 'show' : 'hidden')}>Facebook:</li>
-          <li className={(person.facebook ? 'show' : 'hidden')}>{person.facebook}</li>
-          <li className={(person.phone_number ? 'show' : 'hidden')}>Phone:</li>
-          <li className={(person.phone_number ? 'show' : 'hidden')}>{person.phone_number}</li>
-        </ul>
+      <div>
+        { title }
+        <div className="members-container">
+          { members }
+        </div>
+        <select 
+          className="state-select"
+          onChange={this.handleChange}
+        >
+          <option key="start" value="">--Select your state--</option>
+          {
+            stateList.map(state => {
+              let stateName = Object.values(state)
+              let stateKey = Object.keys(state)
+              return (
+                <option key={stateKey} value={stateName}>
+                  {stateName}
+                </option>
+              )
+            })
+          }
+        </select>
       </div>
     )
-  })
-
-  return (
-    <div>
-      { title }
-      <div className="members-container">
-        { members }
-      </div>
-      <input type='dataset' />
-    </div>
-  )
-
+  }
 }
 
 export default MemberContainer;
