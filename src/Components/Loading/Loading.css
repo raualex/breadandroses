@@ -1,0 +1,74 @@
+.fist2 {
+  height: 200px;
+  left: 200px;
+  position: absolute;
+  top: 240px;
+  width: 200px;
+  z-index: 4;
+}
+
+.outer2 {
+  position: relative;
+  top: -150px;
+  left: 210px;
+  width: 1000px;
+  height: 455px;
+  border-radius: 500px;
+  padding-top: 545px;
+  z-index: 0;
+  -webkit-animation-name: rotate1;
+  -webkit-animation-duration:2s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-timing-function:linear;
+  -moz-animation-name: rotate1;
+  -moz-animation-duration:2s;
+  -moz-animation-iteration-count:infinite;
+  -moz-animation-timing-function:linear;
+}
+
+.outer2 b {
+  z-index: 0;
+  display: block;
+  width: 0;
+  height: 0;
+  border-width: 45px 500px;
+  overflow: hidden;
+  margin: -90px 0 0 0;
+  border-color: transparent #fbe75d;
+  border-style: solid;
+}
+
+.outer2 b:nth-child(1) { -webkit-transform:rotate(20deg);  -moz-transform:rotate(20deg);  }
+.outer2 b:nth-child(2) { -webkit-transform:rotate(40deg);  -moz-transform:rotate(40deg);  }
+.outer2 b:nth-child(3) { -webkit-transform:rotate(60deg);  -moz-transform:rotate(60deg);  }
+.outer2 b:nth-child(4) { -webkit-transform:rotate(80deg);  -moz-transform:rotate(80deg);  }
+.outer2 b:nth-child(5) { -webkit-transform:rotate(100deg); -moz-transform:rotate(100deg); }
+.outer2 b:nth-child(6) { -webkit-transform:rotate(120deg); -moz-transform:rotate(120deg); }
+.outer2 b:nth-child(7) { -webkit-transform:rotate(140deg); -moz-transform:rotate(140deg); }
+.outer2 b:nth-child(8) { -webkit-transform:rotate(160deg); -moz-transform:rotate(160deg); }
+.outer2 b:nth-child(9) { -webkit-transform:rotate(180deg); -moz-transform:rotate(180deg); }
+
+.star2 {
+  position: absolute;
+  z-index: 3;
+}
+
+.star-container2 {
+  left: 28%;
+  position: absolute;
+}
+
+.sun-container2 {
+  flex-direction: column;
+  display: flex;
+  position: relative;
+}
+
+@-webkit-keyframes rotate1 {
+    from { -webkit-transform: rotate(0deg); }
+    to   { -webkit-transform: rotate(20deg); }
+}
+@-moz-keyframes rotate1 {
+    from { -moz-transform: rotate(0deg); }
+    to   { -moz-transform: rotate(20deg); }
+}

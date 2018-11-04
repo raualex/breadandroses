@@ -3,7 +3,8 @@ import { Route, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import LandingPage from '../Components/LandingPage';
 import Nav from '../Containers/Nav';
-import MemberContainer from '../Components/MemberContainer'
+import MemberContainer from '../Components/MemberContainer';
+import Loading from '../Components/Loading';
 import './App.css';
 
 export class App extends Component {
@@ -18,6 +19,7 @@ export class App extends Component {
         <Route exact path='/welcome' render={() => (
           <div>
             <Nav />
+            <Loading />
           </div>
         )} />
         <Route exact path='/senate' render={() => (
