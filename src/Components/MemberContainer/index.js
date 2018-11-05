@@ -1,12 +1,34 @@
 import React, { Component } from 'react';
-import cardImages from '../../Utils/cardImages'
-import stateList from '../../Utils/stateList'
-import './MemberContainer.css'
+import cardImages from '../../Utils/cardImages';
+import { senateStates, houseStates } from '../../Utils/stateList';
+import './MemberContainer.css';
 import uuid from 'uuid';
 
 class MemberContainer extends Component {
   constructor(props) {
     super();
+  }
+
+  createStateList = () => {
+    let stateList;
+    const { navClicked } = this.props
+
+    if (navClicked === 'senate') {
+      stateList = senateStates
+    } else if (navClicked === 'house') {
+      stateList = houseStates
+    }
+
+
+    return stateList.map(state => {
+      let stateName = Object.values(state)
+      let stateKey = Object.keys(state)
+      return (
+        <option key={stateKey} value={stateName}>
+          {stateName}
+        </option>
+      )
+    })
   }
 
   handleChange = (event) => {
@@ -34,7 +56,7 @@ class MemberContainer extends Component {
         </div>
     } else {    
       members = congress.map((person) => {
-    
+    console.log(person.state)
         return (
           <div key={uuid()} className={person.party}>
             <img 
@@ -76,17 +98,7 @@ class MemberContainer extends Component {
           onChange={this.handleChange}
         >
           <option key="start" value="">--Select your state--</option>
-          {
-            stateList.map(state => {
-              let stateName = Object.values(state)
-              let stateKey = Object.keys(state)
-              return (
-                <option key={stateKey} value={stateName}>
-                  {stateName}
-                </option>
-              )
-            })
-          }
+          { this.createStateList() }
         </select>
         <button
           className="reset-btn"
