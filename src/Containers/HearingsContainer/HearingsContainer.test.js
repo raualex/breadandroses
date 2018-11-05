@@ -7,7 +7,7 @@ describe('HearingsContainer', () => {
   let wrapper;
 
   beforeEach(() => {
-    wrapper = shallow(<HearingsContainer navClicked={'senate'} />)
+    wrapper = shallow(<HearingsContainer navClicked={'senate'} senateHearings={[ { title: 'Hearing 1', url: 'something.com' } ]} />)
   });
 
   it('should match the snapshot with senate passed in', () => {
@@ -15,7 +15,7 @@ describe('HearingsContainer', () => {
   });
 
   it('should match the snapshot with house passed in', () => {
-    wrapper = shallow(<HearingsContainer navClicked={'house'} />)
+    wrapper = shallow(<HearingsContainer navClicked={'house'} houseHearings={[ { title: 'Hearing 1', url: 'something.com' } ]} />)
 
     expect(wrapper).toMatchSnapshot()
   });
