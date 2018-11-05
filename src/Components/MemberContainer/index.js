@@ -50,7 +50,7 @@ class MemberContainer extends Component {
               <li>State:</li>
               <li>{person.state}</li>
               <li>Official Website:</li>
-              <li>{person.website}</li>
+              <li><a href={person.website} target="_blank">{person.website}</a></li>
               <li className={(person.twitter ? 'show' : 'hidden')}>Twitter:</li>
               <li className={(person.twitter ? 'show' : 'hidden')}>{person.twitter}</li>
               <li className={(person.facebook ? 'show' : 'hidden')}>Facebook:</li>

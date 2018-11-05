@@ -21,7 +21,7 @@ export const HearingsContainer = (props) => {
         return (
           <div>
             <p>{meeting.title}</p>
-            <p>{meeting.url}</p>
+            <p><a href={meeting.url} target="_blank">{meeting.url}</a></p>
           </div>
         )
       })
@@ -30,7 +30,7 @@ export const HearingsContainer = (props) => {
   }
 
   return (
-    <div>
+    <div className="hearings-container">
       { hearingsList }
     </div>
   )
