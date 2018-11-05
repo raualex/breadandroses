@@ -61,7 +61,7 @@ export class App extends Component {
               filterState={this.filterCongress} 
               resetFilter={this.resetCongress}
             />
-            <HearingsContainer navClicked={this.state.navClicked} />
+            <HearingsContainer navClicked={"senate"} />
           </div>
         )} />
         <Route exact path='/house' render={() => (
@@ -73,7 +73,7 @@ export class App extends Component {
               filterState={this.filterCongress}
               resetFilter={this.resetCongress}
             />
-            <HearingsContainer navClicked={this.state.navClicked} />
+            <HearingsContainer navClicked={"house"} />
           </div>
         )} />
       </div>
