@@ -4,6 +4,14 @@ exports[`HearingsContainer should match the snapshot with house passed in 1`] = 
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <HearingsContainer
+    houseHearings={
+      Array [
+        Object {
+          "title": "Hearing 1",
+          "url": "something.com",
+        },
+      ]
+    }
     navClicked="house"
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -19,19 +27,93 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <Loading />,
+      "children": Array [
+        <div>
+          <p>
+            Hearing 1
+          </p>
+          <p>
+            <a
+              href="something.com"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              something.com
+            </a>
+          </p>
+        </div>,
+      ],
       "className": "hearings-container",
     },
     "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {},
-      "ref": null,
-      "rendered": null,
-      "type": [Function],
-    },
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "1",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <p>
+              Hearing 1
+            </p>,
+            <p>
+              <a
+                href="something.com"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                something.com
+              </a>
+            </p>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Hearing 1",
+            },
+            "ref": null,
+            "rendered": "Hearing 1",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <a
+                href="something.com"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                something.com
+              </a>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "something.com",
+                "href": "something.com",
+                "rel": "noopener noreferrer",
+                "target": "_blank",
+              },
+              "ref": null,
+              "rendered": "something.com",
+              "type": "a",
+            },
+            "type": "p",
+          },
+        ],
+        "type": "div",
+      },
+    ],
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -40,19 +122,93 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <Loading />,
+        "children": Array [
+          <div>
+            <p>
+              Hearing 1
+            </p>
+            <p>
+              <a
+                href="something.com"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                something.com
+              </a>
+            </p>
+          </div>,
+        ],
         "className": "hearings-container",
       },
       "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "1",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <p>
+                Hearing 1
+              </p>,
+              <p>
+                <a
+                  href="something.com"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  something.com
+                </a>
+              </p>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Hearing 1",
+              },
+              "ref": null,
+              "rendered": "Hearing 1",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <a
+                  href="something.com"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  something.com
+                </a>,
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "something.com",
+                  "href": "something.com",
+                  "rel": "noopener noreferrer",
+                  "target": "_blank",
+                },
+                "ref": null,
+                "rendered": "something.com",
+                "type": "a",
+              },
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+      ],
       "type": "div",
     },
   ],
@@ -157,6 +313,14 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <HearingsContainer
     navClicked="senate"
+    senateHearings={
+      Array [
+        Object {
+          "title": "Hearing 1",
+          "url": "something.com",
+        },
+      ]
+    }
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -171,19 +335,62 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <Loading />,
+      "children": Array [
+        <div>
+          <p>
+            Hearing 1
+          </p>
+          <p>
+            something.com
+          </p>
+        </div>,
+      ],
       "className": "hearings-container",
     },
     "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {},
-      "ref": null,
-      "rendered": null,
-      "type": [Function],
-    },
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "1",
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <p>
+              Hearing 1
+            </p>,
+            <p>
+              something.com
+            </p>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Hearing 1",
+            },
+            "ref": null,
+            "rendered": "Hearing 1",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "something.com",
+            },
+            "ref": null,
+            "rendered": "something.com",
+            "type": "p",
+          },
+        ],
+        "type": "div",
+      },
+    ],
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -192,19 +399,62 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <Loading />,
+        "children": Array [
+          <div>
+            <p>
+              Hearing 1
+            </p>
+            <p>
+              something.com
+            </p>
+          </div>,
+        ],
         "className": "hearings-container",
       },
       "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "1",
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <p>
+                Hearing 1
+              </p>,
+              <p>
+                something.com
+              </p>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Hearing 1",
+              },
+              "ref": null,
+              "rendered": "Hearing 1",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "something.com",
+              },
+              "ref": null,
+              "rendered": "something.com",
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+      ],
       "type": "div",
     },
   ],

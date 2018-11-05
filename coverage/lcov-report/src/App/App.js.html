@@ -130,7 +130,11 @@
 85
 86
 87
-88</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+88
+89
+90
+91
+92</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -143,6 +147,27 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -150,25 +175,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -189,6 +195,8 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -218,12 +226,13 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { Component } from 'react';
-import { Route, withRouter } from 'react-router-dom';
+import { Route, withRouter, Switch } from 'react-router-dom';
 import { connect } from 'react-redux';
 import LandingPage from '../Components/LandingPage';
 import Nav from '../Containers/Nav';
 import MemberContainer from '../Components/MemberContainer';
 import Welcome from '../Components/Welcome';
+import ErrorPage from '../Components/ErrorPage';
 import HearingsContainer from '../Containers/HearingsContainer';
 import { filterSenate } from '../Actions/senate-actions';
 import { filterHouse } from '../Actions/house-actions';
@@ -255,37 +264,40 @@ export class App extends Component {
   render() {
     return (
       &lt;div className="App"&gt;
-        &lt;Route exact path='/' component={LandingPage} /&gt;
-        &lt;Route exact path='/welcome' render={<span class="fstat-no" title="function not covered" >()</span> =&gt; (
-<span class="cstat-no" title="statement not covered" >          &lt;div&gt;</span>
-            &lt;Nav /&gt;
-            &lt;Welcome /&gt;
-          &lt;/div&gt;
-        )} /&gt;
-        &lt;Route exact path='/senate' render={<span class="fstat-no" title="function not covered" >()</span> =&gt; (
-<span class="cstat-no" title="statement not covered" >          &lt;div&gt;</span>
-            &lt;Nav /&gt;
-            &lt;MemberContainer 
-              congress={this.props.senate} 
-              navClicked={"senate"}
-              filterState={this.filterCongress} 
-              resetFilter={this.resetCongress}
-            /&gt;
-            &lt;HearingsContainer navClicked={"senate"} /&gt;
-          &lt;/div&gt;
-        )} /&gt;
-        &lt;Route exact path='/house' render={<span class="fstat-no" title="function not covered" >()</span> =&gt; (
-<span class="cstat-no" title="statement not covered" >          &lt;div&gt;</span>
-            &lt;Nav /&gt;
-            &lt;MemberContainer 
-              congress={this.props.house}
-              navClicked={"house"} 
-              filterState={this.filterCongress}
-              resetFilter={this.resetCongress}
-            /&gt;
-            &lt;HearingsContainer navClicked={"house"} /&gt;
-          &lt;/div&gt;
-        )} /&gt;
+        &lt;Switch&gt;
+          &lt;Route exact path='/' component={LandingPage} /&gt;
+          &lt;Route exact path='/welcome' render={<span class="fstat-no" title="function not covered" >()</span> =&gt; (
+<span class="cstat-no" title="statement not covered" >            &lt;div&gt;</span>
+              &lt;Nav /&gt;
+              &lt;Welcome /&gt;
+            &lt;/div&gt;
+          )} /&gt;
+          &lt;Route exact path='/senate' render={<span class="fstat-no" title="function not covered" >()</span> =&gt; (
+<span class="cstat-no" title="statement not covered" >            &lt;div&gt;</span>
+              &lt;Nav /&gt;
+              &lt;MemberContainer 
+                congress={this.props.senate} 
+                navClicked={"senate"}
+                filterState={this.filterCongress} 
+                resetFilter={this.resetCongress}
+              /&gt;
+              &lt;HearingsContainer navClicked={"senate"} /&gt;
+            &lt;/div&gt;
+          )} /&gt;
+          &lt;Route exact path='/house' render={<span class="fstat-no" title="function not covered" >()</span> =&gt; (
+<span class="cstat-no" title="statement not covered" >            &lt;div&gt;</span>
+              &lt;Nav /&gt;
+              &lt;MemberContainer 
+                congress={this.props.house}
+                navClicked={"house"} 
+                filterState={this.filterCongress}
+                resetFilter={this.resetCongress}
+              /&gt;
+              &lt;HearingsContainer navClicked={"house"} /&gt;
+            &lt;/div&gt;
+          )} /&gt;
+          &lt;Route path='*' exact={true} component={ErrorPage} /&gt;
+        &lt;/Switch&gt;
       &lt;/div&gt;
     );
   }
@@ -310,7 +322,7 @@ export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Nov 05 2018 11:35:14 GMT-0700 (MST)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Nov 05 2018 12:22:22 GMT-0700 (MST)
 </div>
 </div>
 <script src="../../prettify.js"></script>
