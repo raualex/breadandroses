@@ -58,6 +58,18 @@ describe('fetchSenate thunk', () => {
     await thunk(mockDispatch)
     expect(mockDispatch).toHaveBeenCalledWith(mockSenateAction)
   });
+
+  it('should fire dispatch with hasErrored(true) if error', async () => {
+    API.getSenate = jest.fn().mockImplementation(() => Promise.reject({
+      ok: false,
+      json: () => Promise.reject({ error: { message: '404'}})
+    }))
+    const thunk = await fetchSenate()
+
+    await thunk(mockDispatch)
+
+    expect(mockDispatch).toHaveBeenCalledWith(hasErrored(true))
+  });
 });
 
 describe('fetchHouse thunk', () => {
@@ -111,6 +123,18 @@ describe('fetchHouse thunk', () => {
     await thunk(mockDispatch)
     expect(mockDispatch).toHaveBeenCalledWith(mockHouseAction)
   });
+
+  it('should fire dispatch with hasErrored(true) if error', async () => {
+    API.getHouse = jest.fn().mockImplementation(() => Promise.reject({
+      ok: false,
+      json: () => Promise.reject({ error: { message: '404'}})
+    }))
+    const thunk = await fetchHouse()
+
+    await thunk(mockDispatch)
+
+    expect(mockDispatch).toHaveBeenCalledWith(hasErrored(true))
+  });
 });
 
 describe('fetchSHearings thunk', () => {
@@ -154,6 +178,18 @@ describe('fetchSHearings thunk', () => {
     await thunk(mockDispatch)
     expect(mockDispatch).toHaveBeenCalledWith(mockHearingAction)
   });
+
+  it('should fire dispatch with hasErrored(true) if error', async () => {
+    API.fetchSenateHearings = jest.fn().mockImplementation(() => Promise.reject({
+      ok: false,
+      json: () => Promise.reject({ error: { message: '404'}})
+    }))
+    const thunk = await fetchSHearings()
+
+    await thunk(mockDispatch)
+
+    expect(mockDispatch).toHaveBeenCalledWith(hasErrored(true))
+  });
 });
 
 describe('fetchHHearings thunk', () => {
@@ -196,5 +232,17 @@ describe('fetchHHearings thunk', () => {
 
     await thunk(mockDispatch)
     expect(mockDispatch).toHaveBeenCalledWith(mockHearingAction)
+  });
+
+  it('should fire dispatch with hasErrored(true) if error', async () => {
+    API.fetchHouseHearings = jest.fn().mockImplementation(() => Promise.reject({
+      ok: false,
+      json: () => Promise.reject({ error: { message: '404'}})
+    }))
+    const thunk = await fetchHHearings()
+
+    await thunk(mockDispatch)
+
+    expect(mockDispatch).toHaveBeenCalledWith(hasErrored(true))
   });
 });
