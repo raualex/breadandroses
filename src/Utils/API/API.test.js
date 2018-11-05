@@ -5,6 +5,10 @@ describe('API', () => {
   let cleanCongress;
   let mockNewCongress;
   let mockCleanContact;
+  let mockSenateHearings;
+  let mockHouseHearings;
+  let cleanSenateHearings;
+  let cleanHouseHearings;
 
   beforeEach(() => {
     mockCongress = {
@@ -53,6 +57,34 @@ describe('API', () => {
       twitter: 'sanders',
       facebook: 'FBsanders',
       phone_number: '555-5555'
+    }
+
+    mockSenateHearings = {
+      results: [
+        {
+          hearings: [
+            {
+              description: 'Hearing 1',
+              url: 'hearing1.com',
+              something: 'something else'
+            }
+          ]
+        }
+      ]
+    }
+
+    mockHouseHearings = {
+      results: [
+        {
+          hearings: [
+            {
+              description: 'Hearing 2',
+              url: 'hearing2.com',
+              something: 'something else'
+            }
+          ]
+        }
+      ]
     }
   });
 
@@ -124,7 +156,7 @@ describe('API', () => {
       expect(window.fetch).toHaveBeenCalled()
     });
 
-    it('should cleaned fetched contact info', async () => {
+    it('should clean fetched contact info', async () => {
       window.fetch = jest.fn().mockImplementation(() => 
         Promise.resolve({
           ok: true,
@@ -134,6 +166,68 @@ describe('API', () => {
 
       let cleanedContact = await API.getMemberContact()
       expect(cleanedContact).toEqual(mockCleanContact)
+    });
+  });
+
+  describe('fetchSenateHearings fetch', () => {
+
+    it('should call fetch', async () => {
+      window.fetch = jest.fn().mockImplementation(() => 
+        Promise.resolve({
+          ok: true,
+          json: () => Promise.resolve(mockSenateHearings)
+        })
+      );
+      
+      await API.fetchSenateHearings()
+      expect(window.fetch).toHaveBeenCalled()
+    });
+
+    it('should clean fetched hearing info', async () => {
+      window.fetch = jest.fn().mockImplementation(() => 
+        Promise.resolve({
+          ok: true,
+          json: () => Promise.resolve(mockSenateHearings)
+        })
+      );
+      const mockCleanHearings = [{
+        title: 'Hearing 1',
+        url: 'none'
+      }]
+
+      let cleanedHearings = await API.fetchSenateHearings()
+      expect(cleanedHearings).toEqual(mockCleanHearings)
+    });
+  });
+
+  describe('fetchHouseHearings fetch', () => {
+
+    it('should call fetch', async () => {
+      window.fetch = jest.fn().mockImplementation(() => 
+        Promise.resolve({
+          ok: true,
+          json: () => Promise.resolve(mockHouseHearings)
+        })
+      );
+      
+      await API.fetchHouseHearings()
+      expect(window.fetch).toHaveBeenCalled()
+    });
+
+    it('should clean fetched hearing info', async () => {
+      window.fetch = jest.fn().mockImplementation(() => 
+        Promise.resolve({
+          ok: true,
+          json: () => Promise.resolve(mockHouseHearings)
+        })
+      );
+      const mockCleanHearings = [{
+        title: 'Hearing 2',
+        url: 'hearing2.com'
+      }]
+
+      let cleanedHearings = await API.fetchHouseHearings()
+      expect(cleanedHearings).toEqual(mockCleanHearings)
     });
   });
 });

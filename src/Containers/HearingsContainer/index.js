@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import './HearingsContainer.css';
+import uuid from 'uuid';
 
 export const HearingsContainer = (props) => {
   let hearingsList;
@@ -9,7 +10,7 @@ export const HearingsContainer = (props) => {
     hearingsList = 
       props.senateHearings.map((meeting) => {
         return (
-          <div>
+          <div key={uuid()}>
             <p>{meeting.title}</p>
             <p>{meeting.url}</p>
           </div>
@@ -19,7 +20,7 @@ export const HearingsContainer = (props) => {
     hearingsList = 
       props.houseHearings.map((meeting) => {
         return (
-          <div>
+          <div key={uuid()}>
             <p>{meeting.title}</p>
             <p><a href={meeting.url} target="_blank" rel="noopener noreferrer">{meeting.url}</a></p>
           </div>
