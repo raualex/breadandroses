@@ -31,6 +31,6 @@ describe('MemberContainer', () => {
     let mockEvent = { target: { value: 'New Jersey - NJ' } }
 
     wrapper.instance().handleChange(mockEvent)
-    expect(mockFilter).toHaveBeenCalledWith('NJ')
+    expect(mockFilter).toHaveBeenCalledWith('NJ', 'senate')
   });
 });

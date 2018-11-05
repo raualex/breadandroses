@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import LandingPage from '../Components/LandingPage';
 import Nav from '../Containers/Nav';
 import MemberContainer from '../Components/MemberContainer';
-import Loading from '../Components/Loading';
+import Welcome from '../Components/Welcome';
 import HearingsContainer from '../Containers/HearingsContainer';
 import { filterSenate } from '../Actions/senate-actions';
 import { filterHouse } from '../Actions/house-actions';
@@ -40,6 +40,7 @@ export class App extends Component {
         <Route exact path='/welcome' render={() => (
           <div>
             <Nav />
+            <Welcome />
           </div>
         )} />
         <Route exact path='/senate' render={() => (
