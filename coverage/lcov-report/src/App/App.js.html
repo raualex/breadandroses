@@ -20,28 +20,28 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">47.62% </span>
+        <span class="strong">85.71% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>10/21</span>
+        <span class='fraction'>18/21</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">75% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>0/4</span>
+        <span class='fraction'>3/4</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">61.54% </span>
+        <span class="strong">76.92% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>8/13</span>
+        <span class='fraction'>10/13</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">42.11% </span>
+        <span class="strong">84.21% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>8/19</span>
+        <span class='fraction'>16/19</span>
       </div>
     </div>
   </div>
-  <div class='status-line low'></div>
+  <div class='status-line high'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet">1
 2
@@ -151,27 +151,27 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">14x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">14x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -245,20 +245,20 @@ export class App extends Component {
     super();
   }
 &nbsp;
-  filterCongress = <span class="fstat-no" title="function not covered" >(s</span>tate, navClicked) =&gt; {
-    let { filterSenate, filterHouse } = <span class="cstat-no" title="statement not covered" >this.props</span>
+  filterCongress = (state, navClicked) =&gt; {
+    let { filterSenate, filterHouse } = this.props
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if (navClicked === 'senate') {</span>
-<span class="cstat-no" title="statement not covered" >      filterSenate(state)</span>
-    } else <span class="cstat-no" title="statement not covered" >if (navClicked === 'house') {</span>
-<span class="cstat-no" title="statement not covered" >      filterHouse(state)</span>
+    if (navClicked === 'senate') {
+      filterSenate(state)
+    } else <span class="missing-if-branch" title="else path not taken" >E</span>if (navClicked === 'house') {
+      filterHouse(state)
     }
   }
 &nbsp;
-  resetCongress = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
-    let { fetchSenate, fetchHouse } = <span class="cstat-no" title="statement not covered" >this.props</span>
-<span class="cstat-no" title="statement not covered" >    fetchSenate()</span>
-<span class="cstat-no" title="statement not covered" >    fetchHouse()</span>
+  resetCongress = () =&gt; {
+    let { fetchSenate, fetchHouse } = this.props
+    fetchSenate()
+    fetchHouse()
   }
 &nbsp;
   render() {
@@ -322,7 +322,7 @@ export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Nov 05 2018 12:22:22 GMT-0700 (MST)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Nov 05 2018 13:47:10 GMT-0700 (MST)
 </div>
 </div>
 <script src="../../prettify.js"></script>

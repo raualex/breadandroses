@@ -4,9 +4,13 @@ import { BrowserRouter } from 'react-router-dom';
 import { shallow } from 'enzyme';
 import { filterSenate } from '../Actions/senate-actions';
 import { filterHouse } from '../Actions/house-actions';
+// import { fetchSenate } from '../Thunks/fetchSenate';
+// import { fetchHouse } from '../Thunks/fetchSenate';
 
 describe('App', () => {
   let wrapper;
+  let mockSenateFunc = jest.fn()
+  let mockHouseFunc = jest.fn()
 
   beforeEach(() => {
     wrapper = shallow(<App />)
@@ -14,6 +18,48 @@ describe('App', () => {
   
   it('matches the snapshot', () => {
     expect(wrapper).toMatchSnapshot()
+  });
+
+  describe('filterCongress function', () => {
+    
+    it('should should fire filterSenate with correct params if navClicked === senate', () => {
+      wrapper = shallow(<App 
+        filterSenate={mockSenateFunc} 
+        filterHouse={mockHouseFunc} 
+      />)
+      wrapper.instance().filterCongress('NJ', 'senate')
+      expect(mockSenateFunc).toHaveBeenCalledWith('NJ')
+    });
+
+    it('should should fire filterHouse with correct params if navClicked === house', () => {
+      wrapper = shallow(<App 
+        filterSenate={mockSenateFunc} 
+        filterHouse={mockHouseFunc} 
+      />)
+      wrapper.instance().filterCongress('CO', 'house')
+      expect(mockHouseFunc).toHaveBeenCalledWith('CO')
+    });
+  });
+
+  describe('resetCongress function', () => {
+
+    it('should fire fetchSenate', () => {
+      wrapper = shallow(<App 
+        fetchSenate={mockSenateFunc} 
+        fetchHouse={mockHouseFunc} 
+      />)
+      wrapper.instance().resetCongress()
+      expect(mockSenateFunc).toHaveBeenCalled()
+    });
+
+    it('should fire fetchHouse', () => {
+      wrapper = shallow(<App 
+        fetchSenate={mockSenateFunc} 
+        fetchHouse={mockHouseFunc} 
+      />)
+      wrapper.instance().resetCongress()
+      expect(mockHouseFunc).toHaveBeenCalled()
+    });
   });
 
   describe('mapStateToProps function', () => {
