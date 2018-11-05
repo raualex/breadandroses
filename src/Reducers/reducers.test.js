@@ -1,8 +1,8 @@
 import * as SenateActions from '../Actions/senate-actions';
 import * as HouseActions from '../Actions/house-actions';
 import * as GeneralActions from '../Actions';
-import { isLoading, hasErrored, senateCommittee } from './senate-reducers';
-import { houseCommittee } from './house-reducers';
+import { isLoading, hasErrored, senateCommittee, senateHearings } from './senate-reducers';
+import { houseCommittee, houseHearings } from './house-reducers';
 
 describe('General reducers', () => {
   
@@ -45,7 +45,7 @@ describe('General reducers', () => {
   });
 });
 
-describe('Senate reducers', () => {
+describe('senateCommittee reducer', () => {
   
   it('should update state with senate info', () => {
     const mockSenate = {
@@ -57,6 +57,24 @@ describe('Senate reducers', () => {
 
     const result = senateCommittee([], mockSenate)
     expect(result).toEqual(mockSenate.senateMembers)
+  });
+
+  
+  it('should filter based on US state passed in', () => {
+    const mockAction = {
+      type: "FILTER_SENATE",
+      state: 'VT'
+    }
+    const mockState = [
+      { name: 'Bernie Sanders', party: 'I', state: 'VT' },
+      { name: 'Tina Smith', party: 'D', state: 'MN' }
+    ]
+    const expected = [
+      { name: 'Bernie Sanders', party: 'I', state: 'VT' }
+    ]
+
+    const result = senateCommittee(mockState, mockAction)
+    expect(result).toEqual(expected)
   });
 
   it('should return original state as a default', () => {
@@ -71,7 +89,33 @@ describe('Senate reducers', () => {
   });
 });
 
-describe('House reducers', () => {
+describe('senateHearings reducer', () => {
+  
+  it('should update state with senate hearing info', () => {
+    const mockSenateHearings = {
+      type: "GET_SENATE_HEARINGS",
+      senateHearings : [
+        { title: 'Hearing 1', url: 'none' }
+      ]
+    }
+
+    const result = senateHearings([], mockSenateHearings)
+    expect(result).toEqual(mockSenateHearings.senateHearings)
+  });
+
+  it('should return original state as a default', () => {
+    const mockSenateHearings = {
+      senateHearings : [
+        { title: 'Hearing 1', url: 'none' }
+      ]
+    }
+
+    const result = senateHearings([], mockSenateHearings)
+    expect(result).toEqual([])
+  });
+});
+
+describe('houseCommittee reducer', () => {
   
   it('should update state with house info', () => {
     const mockHouse = {
@@ -85,6 +129,23 @@ describe('House reducers', () => {
     expect(result).toEqual(mockHouse.houseMembers) 
   });
 
+  it('should filter based on US state passed in', () => {
+    const mockAction = {
+      type: "FILTER_HOUSE",
+      state: 'CO'
+    }
+    const mockState = [
+      { name: 'Jared Polis', party: 'D', state: 'CO' },
+      { name: 'Raul Grijalva', party: 'D', state: 'AZ' }
+    ]
+    const expected = [
+      { name: 'Jared Polis', party: 'D', state: 'CO' }
+    ]
+
+    const result = houseCommittee(mockState, mockAction)
+    expect(result).toEqual(expected)
+  });
+
   it('should return original state as a default', () => {
     const mockHouse = {
       houseMembers : [
@@ -93,6 +154,32 @@ describe('House reducers', () => {
     }
 
     const result = houseCommittee([], mockHouse)
+    expect(result).toEqual([])
+  });
+});
+
+describe('houseHearings reducer', () => {
+  
+  it('should update state with house hearing info', () => {
+    const mockHouseHearings = {
+      type: "GET_HOUSE_HEARINGS",
+      houseHearings : [
+        { title: 'Hearing 1', url: 'none' }
+      ]
+    }
+
+    const result = houseHearings([], mockHouseHearings)
+    expect(result).toEqual(mockHouseHearings.houseHearings)
+  });
+
+  it('should return original state as a default', () => {
+    const mockHouseHearings = {
+      houseHearings : [
+        { title: 'Hearing 1', url: 'none' }
+      ]
+    }
+
+    const result = houseHearings([], mockHouseHearings)
     expect(result).toEqual([])
   });
 });

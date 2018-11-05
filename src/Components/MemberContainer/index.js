@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import cardImages from '../../Utils/cardImages'
-import stateList from '../../Utils/stateList'
-import './MemberContainer.css'
+import cardImages from '../../Utils/cardImages';
+import { senateStates, houseStates } from '../../Utils/stateList';
+import Loading from '../Loading';
+import './MemberContainer.css';
 import uuid from 'uuid';
 
 class MemberContainer extends Component {
@@ -9,9 +10,31 @@ class MemberContainer extends Component {
     super();
   }
 
+  createStateList = () => {
+    let stateList;
+    const { navClicked } = this.props
+
+    if (navClicked === 'senate') {
+      stateList = senateStates
+    } else if (navClicked === 'house') {
+      stateList = houseStates
+    }
+
+
+    return stateList.map(state => {
+      let stateName = Object.values(state)
+      let stateKey = Object.keys(state)
+      return (
+        <option key={stateKey} value={stateName}>
+          {stateName}
+        </option>
+      )
+    })
+  }
+
   handleChange = (event) => {
     let state = event.target.value
-    this.props.filterState(state.slice(-2))
+    this.props.filterState(state.slice(-2), this.props.navClicked)
   }
 
   render() {
@@ -27,14 +50,12 @@ class MemberContainer extends Component {
 
     if (!congress.length) {
       members =
-        <div>
-          <h2>
-            There are no congress people from your state in this committee
-          </h2>
+        <div className="loading-container">
+          <Loading />
         </div>
     } else {    
       members = congress.map((person) => {
-    
+ 
         return (
           <div key={uuid()} className={person.party}>
             <img 
@@ -71,27 +92,19 @@ class MemberContainer extends Component {
         <div className="members-container">
           { members }
         </div>
-        <select 
-          className="state-select"
-          onChange={this.handleChange}
-        >
-          <option key="start" value="">--Select your state--</option>
-          {
-            stateList.map(state => {
-              let stateName = Object.values(state)
-              let stateKey = Object.keys(state)
-              return (
-                <option key={stateKey} value={stateName}>
-                  {stateName}
-                </option>
-              )
-            })
-          }
-        </select>
-        <button
-          className="reset-btn"
-          onClick={this.props.resetFilter}
-        >Reset State Filter</button>
+        <div className="state-filter-container">
+          <select 
+            className="state-select"
+            onChange={this.handleChange}
+          >
+            <option key="start" value="">--Select your state--</option>
+            { this.createStateList() }
+          </select>
+          <button
+            className="reset-btn"
+            onClick={this.props.resetFilter}
+          >Reset State Filter</button>
+        </div>
       </div>
     )
   }

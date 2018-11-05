@@ -21,16 +21,26 @@ describe('Nav', () => {
 
     beforeEach(() => {
       mappedProps = mapDispatchToProps(mockDispatch)
-    })
+    });
 
     it('should call dispatch when fetchSenate is called', () => {
       mappedProps.fetchSenate()
       expect(mockDispatch).toHaveBeenCalled()
-    })
+    });
 
     it('should call dispatch when fetchHouse is called', () => {
       mappedProps.fetchHouse()
       expect(mockDispatch).toHaveBeenCalled()
-    })
-  })
-})
+    });
+
+    it('should call dispatch when fetchSenateHearings is called', () => {
+      mappedProps.fetchSenateHearings()
+      expect(mockDispatch).toHaveBeenCalled()
+    });
+
+    it('should call dispatch when fetchHouseHearings is called', () => {
+      mappedProps.fetchHouseHearings()
+      expect(mockDispatch).toHaveBeenCalled()
+    });
+  });
+});

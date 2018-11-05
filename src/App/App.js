@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import LandingPage from '../Components/LandingPage';
 import Nav from '../Containers/Nav';
 import MemberContainer from '../Components/MemberContainer';
-import Loading from '../Components/Loading';
+import Welcome from '../Components/Welcome';
 import HearingsContainer from '../Containers/HearingsContainer';
 import { filterSenate } from '../Actions/senate-actions';
 import { filterHouse } from '../Actions/house-actions';
@@ -17,8 +17,7 @@ export class App extends Component {
     super();
   }
 
-  filterCongress = (state) => {
-    let { navClicked } = this.state
+  filterCongress = (state, navClicked) => {
     let { filterSenate, filterHouse } = this.props
 
     if (navClicked === 'senate') {
@@ -41,7 +40,7 @@ export class App extends Component {
         <Route exact path='/welcome' render={() => (
           <div>
             <Nav />
-            <Loading />
+            <Welcome />
           </div>
         )} />
         <Route exact path='/senate' render={() => (

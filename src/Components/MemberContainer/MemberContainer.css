@@ -37,6 +37,13 @@
   font-weight: 700;
 }
 
+.loading-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .members-container {
   display: flex;
   height: 760px;
@@ -58,4 +65,41 @@
 
 .politician {
   border-radius: 48px; 
+}
+
+.state-filter-container {
+  align-items: center;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  width: 100%;
+}
+
+.state-select {
+  font-size: 1.5em;
+  height: 60px;
+  margin-right: 80px;
+  width: 500px;
+}
+
+.reset-btn {
+  background-color: #f4c076;
+  border: solid 4px #000;
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 1.5em;
+  height: 60px;
+  width: 300px;
+}
+
+.reset-btn:active {
+  background-color: #CC2B1D;
+  color: #fff;
+}
+
+.reset-btn:focus {
+  outline: none;
+}
+
+.reset-btn:hover {
+  cursor: pointer;
 }
