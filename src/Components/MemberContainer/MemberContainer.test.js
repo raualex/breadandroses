@@ -28,7 +28,7 @@ describe('MemberContainer', () => {
   });
 
   it('should fire filterState in handleChange function', () => {
-    let mockEvent = { target: { value: 'New Jersey - NJ' } }
+    let mockEvent = { target: { value: 'NJ' } }
 
     wrapper.instance().handleChange(mockEvent)
     expect(mockFilter).toHaveBeenCalledWith('NJ', 'senate')
