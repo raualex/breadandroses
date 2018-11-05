@@ -92,17 +92,19 @@ class MemberContainer extends Component {
         <div className="members-container">
           { members }
         </div>
-        <select 
-          className="state-select"
-          onChange={this.handleChange}
-        >
-          <option key="start" value="">--Select your state--</option>
-          { this.createStateList() }
-        </select>
-        <button
-          className="reset-btn"
-          onClick={this.props.resetFilter}
-        >Reset State Filter</button>
+        <div className="state-filter-container">
+          <select 
+            className="state-select"
+            onChange={this.handleChange}
+          >
+            <option key="start" value="">--Select your state--</option>
+            { this.createStateList() }
+          </select>
+          <button
+            className="reset-btn"
+            onClick={this.props.resetFilter}
+          >Reset State Filter</button>
+        </div>
       </div>
     )
   }
