@@ -27,10 +27,41 @@ describe('MemberContainer', () => {
     expect(wrapper).toMatchSnapshot()
   });
 
-  it('should fire filterState in handleChange function', () => {
-    let mockEvent = { target: { value: 'NJ' } }
+  describe('handleChange function', () => {
+    it('should update state', () => {
+      let mockState = { select: '' }
+      let mockNewState = { select: 'NJ' }
+      let mockEvent = { target: { value: 'NJ' } }
 
-    wrapper.instance().handleChange(mockEvent)
-    expect(mockFilter).toHaveBeenCalledWith('NJ', 'senate')
+      expect(wrapper.state()).toEqual(mockState)
+      wrapper.instance().handleChange(mockEvent)
+      expect(wrapper.state()).toEqual(mockNewState)
+    });
+
+    it('should fire filterState with correct params', () => {
+      let mockEvent = { target: { value: 'NJ' } }
+
+      wrapper.instance().handleChange(mockEvent)
+      expect(mockFilter).toHaveBeenCalledWith('NJ', 'senate')
+    });
+  });
+
+  describe('handleReset function', () => {
+    it('should reset state', () => {
+      let mockEvent = { preventDefault: jest.fn() }
+
+      wrapper.instance().setState({ select: 'VA' })
+      expect(wrapper.state()).toEqual({ select: 'VA' })
+
+      wrapper.instance().handleReset(mockEvent)
+      expect(wrapper.state()).toEqual({ select: '' })
+    });
+
+    it('should fire resetFilter', () => {
+      let mockEvent = { preventDefault: jest.fn() }
+
+      wrapper.instance().handleReset(mockEvent)
+      expect(mockReset).toHaveBeenCalled()
+    });
   });
 });
