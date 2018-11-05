@@ -33,11 +33,22 @@
   border: solid 6px red;
 }
 
+.label {
+  font-weight: 700;
+}
+
 .members-container {
   display: flex;
   height: 760px;
   flex-wrap: nowrap;
   overflow-x: auto;
+}
+
+.member-details {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .member-list {

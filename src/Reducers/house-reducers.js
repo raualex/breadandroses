@@ -12,7 +12,6 @@ export const houseCommittee = (state = [], action) => {
 export const houseHearings = (state = [], action) => {
   switch (action.type) {
     case "GET_HOUSE_HEARINGS":
-    console.log(action)
       return action.houseHearings
     default:
       return state

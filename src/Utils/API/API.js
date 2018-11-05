@@ -69,7 +69,6 @@ export const fetchSenateHearings = async () => {
       url: 'none'
     }
   })
-  console.log(cleanedHearings)
   return cleanedHearings
 }
 
@@ -87,7 +86,6 @@ export const fetchHouseHearings = async () => {
       url: hearing.url
     }
   })
-  console.log(cleanedHearings)
   return cleanedHearings
 }
 

@@ -30,7 +30,6 @@ export const senateCommittee = (state = [], action) => {
 export const senateHearings = (state = [], action) => {
   switch (action.type) {
     case "GET_SENATE_HEARINGS":
-    console.log(action)
       return action.senateHearings
     default:
       return state

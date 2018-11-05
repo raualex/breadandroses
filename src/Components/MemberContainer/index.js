@@ -42,22 +42,24 @@ class MemberContainer extends Component {
               alt={person.name} 
               className="politician"
             />
-            <ul className="member-list">
-              <li>Name:</li>
-              <li>{person.name}</li>
-              <li>Party:</li>
-              <li>{person.party}</li>
-              <li>State:</li>
-              <li>{person.state}</li>
-              <li>Official Website:</li>
-              <li><a href={person.website} target="_blank">{person.website}</a></li>
-              <li className={(person.twitter ? 'show' : 'hidden')}>Twitter:</li>
-              <li className={(person.twitter ? 'show' : 'hidden')}>{person.twitter}</li>
-              <li className={(person.facebook ? 'show' : 'hidden')}>Facebook:</li>
-              <li className={(person.facebook ? 'show' : 'hidden')}>{person.facebook}</li>
-              <li className={(person.phone_number ? 'show' : 'hidden')}>Phone:</li>
-              <li className={(person.phone_number ? 'show' : 'hidden')}>{person.phone_number}</li>
-            </ul>
+            <div className="member-details">
+              <ul className="member-list">
+                <li className="label">Name:</li>
+                <li>{person.name}</li>
+                <li className="label">Party:</li>
+                <li>{person.party}</li>
+                <li className="label">State:</li>
+                <li>{person.state}</li>
+                <li className="label">Official Website:</li>
+                <li><a href={person.website} target="_blank">{person.website}</a></li>
+                <li className={(person.twitter ? 'label' : 'hidden')}>Twitter:</li>
+                <li className={(person.twitter ? 'show' : 'hidden')}>{person.twitter}</li>
+                <li className={(person.facebook ? 'label' : 'hidden')}>Facebook:</li>
+                <li className={(person.facebook ? 'show' : 'hidden')}>{person.facebook}</li>
+                <li className={(person.phone_number ? 'label' : 'hidden')}>Phone:</li>
+                <li className={(person.phone_number ? 'show' : 'hidden')}>{person.phone_number}</li>
+              </ul>
+            </div>
           </div>
         )
       })
