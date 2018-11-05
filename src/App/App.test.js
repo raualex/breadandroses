@@ -4,8 +4,6 @@ import { BrowserRouter } from 'react-router-dom';
 import { shallow } from 'enzyme';
 import { filterSenate } from '../Actions/senate-actions';
 import { filterHouse } from '../Actions/house-actions';
-// import { fetchSenate } from '../Thunks/fetchSenate';
-// import { fetchHouse } from '../Thunks/fetchSenate';
 
 describe('App', () => {
   let wrapper;

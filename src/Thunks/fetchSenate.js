@@ -1,5 +1,5 @@
 import { isLoading, hasErrored } from '../Actions';
-import { getSenateInfo } from '../Actions/senate-actions'
+import { getSenateInfo } from '../Actions/senate-actions';
 import { getSenate, getMemberContact } from '../Utils/API/API';
 
 export const fetchSenate = () => {
