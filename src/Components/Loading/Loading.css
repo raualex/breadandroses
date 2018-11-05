@@ -92,6 +92,7 @@
   justify-content: center;
   left: 28%;
   position: absolute;
+  top: 40%;
   width: 600px;
 }
 
@@ -105,12 +106,6 @@
     height: 571px;
     width: 600px;
   }
-}
-
-.sun-container2 {
-  flex-direction: column;
-  display: flex;
-  position: relative;
 }
 
 @-webkit-keyframes rotate1 {

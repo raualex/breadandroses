@@ -17,8 +17,7 @@ export class App extends Component {
     super();
   }
 
-  filterCongress = (state) => {
-    let { navClicked } = this.state
+  filterCongress = (state, navClicked) => {
     let { filterSenate, filterHouse } = this.props
 
     if (navClicked === 'senate') {
@@ -41,7 +40,6 @@ export class App extends Component {
         <Route exact path='/welcome' render={() => (
           <div>
             <Nav />
-            <Loading />
           </div>
         )} />
         <Route exact path='/senate' render={() => (

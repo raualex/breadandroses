@@ -13,7 +13,17 @@ describe('MemberContainer', () => {
     wrapper = shallow(<MemberContainer congress={mockCongress} navClicked={'senate'} filterState={mockFilter} resetFilter={mockReset} />)
   })
   
-  it('matches the snapshot', () => {
+  it('matches the snapshot with senate passed in', () => {
+    expect(wrapper).toMatchSnapshot()
+  });
+
+  it('matches the snapshot with senate passed in', () => {
+    wrapper = shallow(<MemberContainer congress={mockCongress} navClicked={'house'} filterState={mockFilter} resetFilter={mockReset} />)
+    expect(wrapper).toMatchSnapshot()
+  });
+
+  it('matches the snapshot with no congress array passed in', () => {
+    wrapper = shallow(<MemberContainer congress={[]} navClicked={'house'} filterState={mockFilter} resetFilter={mockReset} />)
     expect(wrapper).toMatchSnapshot()
   });
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import Loading from '../../Components/Loading';
 import './HearingsContainer.css';
 import uuid from 'uuid';
 
@@ -27,7 +28,7 @@ export const HearingsContainer = (props) => {
         )
       })
   } else {
-    hearingsList = <div></div>
+    hearingsList = <Loading />
   }
 
   return (

@@ -1,14 +1,14 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for src/Components/LandingPage/index.js</title>
+    <title>Code coverage report for src/Utils/stateList.js</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../../../prettify.css" />
-    <link rel="stylesheet" href="../../../base.css" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style type='text/css'>
         .coverage-summary .sorter {
-            background-image: url(../../../sort-arrow-sprite.png);
+            background-image: url(../../sort-arrow-sprite.png);
         }
     </style>
 </head>
@@ -16,7 +16,7 @@
 <div class='wrapper'>
   <div class='pad1'>
     <h1>
-      <a href="../../../index.html">All files</a> / <a href="index.html">src/Components/LandingPage</a> index.js
+      <a href="../../index.html">All files</a> / <a href="index.html">src/Utils</a> stateList.js
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
@@ -32,7 +32,7 @@
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>1/1</span>
+        <span class='fraction'>0/0</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
@@ -79,7 +79,47 @@
 34
 35
 36
-37</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56</td><td class="line-coverage quiet"><span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -87,7 +127,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -114,44 +153,62 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
-import './LandingPage.css';
-import star from '../../Utils/Assets/Images/back_star.png';
-import fist from '../../Utils/Assets/Images/power.svg';
-import { NavLink } from 'react-router-dom'
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">export const senateStates = [
+    {'AK': 'Alaska - AK'},
+    {'AL': 'Alabama - AL'},
+    {'CO': 'Colorado - CO'},
+    {'CT': 'Connecticut - CT'},
+    {'GA': 'Georgia - GA'},
+    {'IN': 'Indiana - IN'},
+    {'KS': 'Kansas - KS'},
+    {'KY': 'Kentucky - KY'},
+    {'LA': 'Louisiana - LA'},
+    {'MA': 'Massachusetts - MA'},
+    {'ME': 'Maine - ME'},
+    {'MN': 'Minnesota - MN'},
+    {'NC': 'North Carolina - NC'},
+    {'NH': 'New Hampshire - NH'},
+    {'PA': 'Pennsylvania - PA'},
+    {'RI': 'Rhode Island - RI'},
+    {'SC': 'South Carolina - SC'},
+    {'TN': 'Tennessee - TN'},
+    {'UT': 'Utah - UT'},
+    {'VA': 'Virginia - VA'},
+    {'VT': 'Vermont - VT'},
+    {'WA': 'Washington - WA'},
+    {'WI': 'Wisconsin - WI'},
+    {'WY': 'Wyoming - WY'}
+  ]
 &nbsp;
-export const LandingPage = () =&gt; {
-&nbsp;
-  return (
-    &lt;div className="sun-container"&gt;
-      &lt;div className="title-container"&gt;
-        &lt;h1 className="title-text"&gt;BREAD&lt;/h1&gt;
-        &lt;h1 className="title-text"&gt;&amp;&lt;/h1&gt;
-        &lt;h1 className="title-text"&gt;ROSES&lt;/h1&gt;
-      &lt;/div&gt;
-      &lt;div className="outer"&gt;
-        &lt;b&gt;&lt;/b&gt;&lt;b&gt;&lt;/b&gt;&lt;b&gt;&lt;/b&gt;&lt;b&gt;&lt;/b&gt;&lt;b&gt;&lt;/b&gt;&lt;b&gt;&lt;/b&gt;&lt;b&gt;&lt;/b&gt;&lt;b&gt;&lt;/b&gt;&lt;b&gt;&lt;/b&gt;&lt;b&gt;&lt;/b&gt;
-      &lt;/div&gt;
-      &lt;div className="star-container"&gt;
-        &lt;img src={star} className="star" alt="star" /&gt;
-        &lt;img src={fist} className="fist" alt="fist" /&gt;
-      &lt;/div&gt;
-      &lt;div className="back-foreground"&gt;
-      &lt;/div&gt;
-      &lt;div className="back-cover-layer"&gt;
-        &lt;h2 className="subtitle"&gt;What is Congress Doing for You?&lt;/h2&gt;
-        &lt;NavLink to='/welcome'&gt;
-          &lt;button className="enter-btn"&gt;
-            ENTER
-          &lt;/button&gt;
-        &lt;/NavLink&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  )
-}
-&nbsp;
-export default LandingPage;</pre></td></tr>
+export const houseStates = [
+    {'AL': 'Alabama - AL'},
+    {'AZ': 'Arizona - AZ'},
+    {'CA': 'California - CA'},
+    {'CO': 'Colorado - CO'},
+    {'CT': 'Connecticut - CT'},
+    {'DE': 'Delaware - DE'},
+    {'FL': 'Florida - FL'},
+    {'GA': 'Georgia - GA'},
+    {'IL': 'Illinois - IL'},
+    {'IN': 'Indiana - IN'},
+    {'KS': 'Kansas - KS'},
+    {'KY': 'Kentucky - KY'},
+    {'MI': 'Michigan - MI'},
+    {'MN': 'Minnesota - MN'},
+    {'MP': 'Northern Mariana Islands - MP'},
+    {'NC': 'North Carolina - NC'},
+    {'NH': 'New Hampshire - NH'},
+    {'NJ': 'New Jersey - NJ'},
+    {'NY': 'New York - NY'},
+    {'OH': 'Ohio - OH'},
+    {'OR': 'Oregon - OR'},
+    {'PA': 'Pennsylvania - PA'},
+    {'SC': 'South Carolina - SC'},
+    {'TN': 'Tennessee - TN'},
+    {'VA': 'Virginia - VA'},
+    {'WI': 'Wisconsin - WI'}
+  ]
+&nbsp;</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->
 </div><!-- /wrapper -->
@@ -160,7 +217,7 @@ export default LandingPage;</pre></td></tr>
   generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Nov 05 2018 09:42:05 GMT-0700 (MST)
 </div>
 </div>
-<script src="../../../prettify.js"></script>
+<script src="../../prettify.js"></script>
 <script>
 window.onload = function () {
         if (typeof prettyPrint === 'function') {
@@ -168,6 +225,6 @@ window.onload = function () {
         }
 };
 </script>
-<script src="../../../sorter.js"></script>
+<script src="../../sorter.js"></script>
 </body>
 </html>

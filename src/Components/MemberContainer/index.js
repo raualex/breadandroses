@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import cardImages from '../../Utils/cardImages';
 import { senateStates, houseStates } from '../../Utils/stateList';
+import Loading from '../Loading';
 import './MemberContainer.css';
 import uuid from 'uuid';
 
@@ -33,7 +34,7 @@ class MemberContainer extends Component {
 
   handleChange = (event) => {
     let state = event.target.value
-    this.props.filterState(state.slice(-2))
+    this.props.filterState(state.slice(-2), this.props.navClicked)
   }
 
   render() {
@@ -49,14 +50,12 @@ class MemberContainer extends Component {
 
     if (!congress.length) {
       members =
-        <div>
-          <h2>
-            There are no congress people from your state in this committee
-          </h2>
+        <div className="loading-container">
+          <Loading />
         </div>
     } else {    
       members = congress.map((person) => {
-    console.log(person.state)
+ 
         return (
           <div key={uuid()} className={person.party}>
             <img 

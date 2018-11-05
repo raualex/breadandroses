@@ -59,6 +59,24 @@ describe('senateCommittee reducer', () => {
     expect(result).toEqual(mockSenate.senateMembers)
   });
 
+  
+  it('should filter based on US state passed in', () => {
+    const mockAction = {
+      type: "FILTER_SENATE",
+      state: 'VT'
+    }
+    const mockState = [
+      { name: 'Bernie Sanders', party: 'I', state: 'VT' },
+      { name: 'Tina Smith', party: 'D', state: 'MN' }
+    ]
+    const expected = [
+      { name: 'Bernie Sanders', party: 'I', state: 'VT' }
+    ]
+
+    const result = senateCommittee(mockState, mockAction)
+    expect(result).toEqual(expected)
+  });
+
   it('should return original state as a default', () => {
     const mockSenate = {
       senateMembers : [
@@ -109,6 +127,23 @@ describe('houseCommittee reducer', () => {
 
     const result = houseCommittee([], mockHouse)
     expect(result).toEqual(mockHouse.houseMembers) 
+  });
+
+  it('should filter based on US state passed in', () => {
+    const mockAction = {
+      type: "FILTER_HOUSE",
+      state: 'CO'
+    }
+    const mockState = [
+      { name: 'Jared Polis', party: 'D', state: 'CO' },
+      { name: 'Raul Grijalva', party: 'D', state: 'AZ' }
+    ]
+    const expected = [
+      { name: 'Jared Polis', party: 'D', state: 'CO' }
+    ]
+
+    const result = houseCommittee(mockState, mockAction)
+    expect(result).toEqual(expected)
   });
 
   it('should return original state as a default', () => {
