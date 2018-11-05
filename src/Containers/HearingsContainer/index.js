@@ -21,7 +21,7 @@ export const HearingsContainer = (props) => {
         return (
           <div>
             <p>{meeting.title}</p>
-            <p><a href={meeting.url} target="_blank">{meeting.url}</a></p>
+            <p><a href={meeting.url} target="_blank" rel="noopener noreferrer">{meeting.url}</a></p>
           </div>
         )
       })
