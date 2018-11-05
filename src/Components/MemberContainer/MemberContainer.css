@@ -1,23 +1,61 @@
+.committee-title {
+  -webkit-text-stroke: 2px #000;
+  color: #f4c076;
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 2.5em;
+}
+
 .hidden {
   display: none;
 }
 
-.member {
+.R,
+.D,
+.I {
   background-color: rgba(243,243,243,0.8);
   border-radius: 48px;
   flex: 0 0 auto;
+  height: 676px;
   margin: 8px;
-  padding: 4px;
+  padding: 28px;
+  width: 294px;
+}
+
+.D {
+  border: solid 6px blue;
+}
+
+.I {
+  border: solid 6px yellow;
+}
+
+.R {
+  border: solid 6px red;
+}
+
+.label {
+  font-weight: 700;
 }
 
 .members-container {
   display: flex;
-  height: 500px;
+  height: 760px;
   flex-wrap: nowrap;
   overflow-x: auto;
+}
+
+.member-details {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .member-list {
   list-style-type: none;
   padding: 0;
+}
+
+.politician {
+  border-radius: 48px; 
 }

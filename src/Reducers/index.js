@@ -1,12 +1,14 @@
 import { combineReducers } from "redux";
-import { senateCommittee, isLoading, hasErrored } from "./senate-reducers";
-import { houseCommittee } from "./house-reducers";
+import { senateCommittee, senateHearings, isLoading, hasErrored } from "./senate-reducers";
+import { houseCommittee, houseHearings } from "./house-reducers";
 
 const rootReducer = combineReducers({
   isLoading,
   hasErrored,
   senateMembers: senateCommittee,
-  houseMembers: houseCommittee
+  houseMembers: houseCommittee,
+  senateHearings: senateHearings,
+  houseHearings: houseHearings
 });
 
 export default rootReducer;

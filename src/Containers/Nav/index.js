@@ -6,6 +6,8 @@ import fist from '../../Utils/Assets/Images/power.svg';
 import { connect } from 'react-redux';
 import { fetchSenate } from '../../Thunks/fetchSenate';
 import { fetchHouse } from '../../Thunks/fetchHouse';
+import { fetchSHearings } from '../../Thunks/senateHearings';
+import { fetchHHearings } from '../../Thunks/houseHearings';
 
 export const Nav = (props) => {
 
@@ -25,6 +27,7 @@ export const Nav = (props) => {
           <button 
             className="senate-btn"
             name='senate'
+            onClick={props.fetchSenateHearings}
           >
             SENATE
           </button>
@@ -37,6 +40,7 @@ export const Nav = (props) => {
           <button 
             className="house-btn"
             name='house'
+            onClick={props.fetchHouseHearings}
           >
             HOUSE
           </button>
@@ -52,7 +56,9 @@ export const Nav = (props) => {
 
 export const mapDispatchToProps = (dispatch) => ({
   fetchSenate: () => dispatch(fetchSenate()),
-  fetchHouse: () => dispatch(fetchHouse())
+  fetchHouse: () => dispatch(fetchHouse()),
+  fetchSenateHearings: () => dispatch(fetchSHearings()),
+  fetchHouseHearings: () => dispatch(fetchHHearings())
 })
 
 export default connect(null, mapDispatchToProps)(Nav);

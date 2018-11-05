@@ -20,7 +20,18 @@ export const senateCommittee = (state = [], action) => {
   switch (action.type) {
     case "GET_SENATE":
       return [...action.senateMembers]
+    case "FILTER_SENATE":
+      return state.filter(senator => senator.state === action.state)
     default:
       return state;
+  }
+}
+
+export const senateHearings = (state = [], action) => {
+  switch (action.type) {
+    case "GET_SENATE_HEARINGS":
+      return action.senateHearings
+    default:
+      return state
   }
 }
