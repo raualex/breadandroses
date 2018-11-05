@@ -8,6 +8,10 @@ import uuid from 'uuid';
 class MemberContainer extends Component {
   constructor(props) {
     super();
+
+    this.state = {
+      select: ''
+    }
   }
 
   createStateList = () => {
@@ -25,7 +29,7 @@ class MemberContainer extends Component {
       let stateName = Object.values(state)
       let stateKey = Object.keys(state)
       return (
-        <option key={stateKey} value={stateName}>
+        <option key={stateKey} value={stateKey}>
           {stateName}
         </option>
       )
@@ -34,7 +38,13 @@ class MemberContainer extends Component {
 
   handleChange = (event) => {
     let state = event.target.value
-    this.props.filterState(state.slice(-2), this.props.navClicked)
+   
+    this.setState({ select: state }, () => this.props.filterState(state, this.props.navClicked))
+  }
+
+  handleReset = (event) => {
+    event.preventDefault()
+    this.setState({ select: '' }, () => this.props.resetFilter())
   }
 
   render() {
@@ -92,19 +102,25 @@ class MemberContainer extends Component {
         <div className="members-container">
           { members }
         </div>
-        <div className="state-filter-container">
+        <form 
+          className="state-filter-container">
           <select 
             className="state-select"
             onChange={this.handleChange}
+            value={this.state.select}
           >
-            <option key="start" value="">--Select your state--</option>
+            <option 
+              key="start" 
+              value=""
+            >--Select your state--
+            </option>
             { this.createStateList() }
           </select>
           <button
             className="reset-btn"
-            onClick={this.props.resetFilter}
+            onClick={this.handleReset}
           >Reset State Filter</button>
-        </div>
+        </form>
       </div>
     )
   }

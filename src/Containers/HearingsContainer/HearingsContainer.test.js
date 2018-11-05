@@ -18,7 +18,13 @@ describe('HearingsContainer', () => {
     wrapper = shallow(<HearingsContainer navClicked={'house'} />)
 
     expect(wrapper).toMatchSnapshot()
-  })
+  });
+
+  it('should match the snapshot with nothing passed in', () => {
+    wrapper = shallow(<HearingsContainer navClicked={''} />)
+
+    expect(wrapper).toMatchSnapshot()
+  });
 
   describe('mapStateToProps function', () => {
     it('should return object with Hearings arrays for both houses of Congress', () => {

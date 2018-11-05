@@ -45,6 +45,7 @@ ShallowWrapper {
             onChange={[Function]}
           >
             <option
+              selected="selected"
               value=""
             >
               --Select your state--
@@ -353,6 +354,7 @@ ShallowWrapper {
               onChange={[Function]}
             >
               <option
+                selected="selected"
                 value=""
               >
                 --Select your state--
@@ -610,6 +612,7 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <option
+                  selected="selected"
                   value=""
                 >
                   --Select your state--
@@ -862,6 +865,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "--Select your state--",
+                  "selected": "selected",
                   "value": "",
                 },
                 "ref": null,
@@ -1387,6 +1391,7 @@ ShallowWrapper {
               onChange={[Function]}
             >
               <option
+                selected="selected"
                 value=""
               >
                 --Select your state--
@@ -1695,6 +1700,7 @@ ShallowWrapper {
                 onChange={[Function]}
               >
                 <option
+                  selected="selected"
                   value=""
                 >
                   --Select your state--
@@ -1952,6 +1958,7 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <option
+                    selected="selected"
                     value=""
                   >
                     --Select your state--
@@ -2204,6 +2211,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "--Select your state--",
+                    "selected": "selected",
                     "value": "",
                   },
                   "ref": null,
@@ -2857,6 +2865,7 @@ ShallowWrapper {
             onChange={[Function]}
           >
             <option
+              selected="selected"
               value=""
             >
               --Select your state--
@@ -3664,6 +3673,7 @@ ShallowWrapper {
               onChange={[Function]}
             >
               <option
+                selected="selected"
                 value=""
               >
                 --Select your state--
@@ -3903,6 +3913,7 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <option
+                  selected="selected"
                   value=""
                 >
                   --Select your state--
@@ -4137,6 +4148,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "--Select your state--",
+                  "selected": "selected",
                   "value": "",
                 },
                 "ref": null,
@@ -4705,6 +4717,7 @@ ShallowWrapper {
               onChange={[Function]}
             >
               <option
+                selected="selected"
                 value=""
               >
                 --Select your state--
@@ -5512,6 +5525,7 @@ ShallowWrapper {
                 onChange={[Function]}
               >
                 <option
+                  selected="selected"
                   value=""
                 >
                   --Select your state--
@@ -5751,6 +5765,7 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <option
+                    selected="selected"
                     value=""
                   >
                     --Select your state--
@@ -5985,6 +6000,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "--Select your state--",
+                    "selected": "selected",
                     "value": "",
                   },
                   "ref": null,
@@ -6602,6 +6618,7 @@ ShallowWrapper {
             onChange={[Function]}
           >
             <option
+              selected="selected"
               value=""
             >
               --Select your state--
@@ -7427,6 +7444,7 @@ ShallowWrapper {
               onChange={[Function]}
             >
               <option
+                selected="selected"
                 value=""
               >
                 --Select your state--
@@ -7684,6 +7702,7 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <option
+                  selected="selected"
                   value=""
                 >
                   --Select your state--
@@ -7936,6 +7955,7 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": "--Select your state--",
+                  "selected": "selected",
                   "value": "",
                 },
                 "ref": null,
@@ -8540,6 +8560,7 @@ ShallowWrapper {
               onChange={[Function]}
             >
               <option
+                selected="selected"
                 value=""
               >
                 --Select your state--
@@ -9365,6 +9386,7 @@ ShallowWrapper {
                 onChange={[Function]}
               >
                 <option
+                  selected="selected"
                   value=""
                 >
                   --Select your state--
@@ -9622,6 +9644,7 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <option
+                    selected="selected"
                     value=""
                   >
                     --Select your state--
@@ -9874,6 +9897,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "--Select your state--",
+                    "selected": "selected",
                     "value": "",
                   },
                   "ref": null,
