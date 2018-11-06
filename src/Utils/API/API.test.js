@@ -7,8 +7,6 @@ describe('API', () => {
   let mockCleanContact;
   let mockSenateHearings;
   let mockHouseHearings;
-  let cleanSenateHearings;
-  let cleanHouseHearings;
 
   beforeEach(() => {
     mockCongress = {

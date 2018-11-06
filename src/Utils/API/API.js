@@ -65,7 +65,7 @@ export const fetchSenateHearings = async () => {
   const hearings = result.results[0]
   const cleanedHearings = hearings.hearings.map((hearing) => {
     return {
-      title: hearing.description,
+      title: hearing.description.replace(/&quot;/g,'').replace(/&#39;/g,'\''),
       url: 'none'
     }
   })
@@ -82,7 +82,7 @@ export const fetchHouseHearings = async () => {
   const hearings = result.results[0]
   const cleanedHearings = hearings.hearings.map((hearing) => {
     return {
-      title: hearing.description,
+      title: hearing.description.replace(/&quot;/g,'').replace(/&#39;/g,'\''),
       url: hearing.url
     }
   })

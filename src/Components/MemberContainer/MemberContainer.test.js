@@ -44,6 +44,14 @@ describe('MemberContainer', () => {
       wrapper.instance().handleChange(mockEvent)
       expect(mockFilter).toHaveBeenCalledWith('NJ', 'senate')
     });
+
+    it('should not update state if filter has already been applied', () => {
+      wrapper.instance().setState({ select: 'NJ' })
+      let mockEvent = { target: { value: 'CO' } }
+
+      wrapper.instance().handleChange(mockEvent)
+      expect(wrapper.state()).toEqual({ select: 'NJ' })
+    });
   });
 
   describe('handleReset function', () => {
