@@ -3,6 +3,7 @@ import cardImages from '../../Utils/cardImages';
 import { senateStates, houseStates } from '../../Utils/stateList';
 import Loading from '../Loading';
 import './MemberContainer.css';
+import PropTypes from 'prop-types';
 import uuid from 'uuid';
 
 class MemberContainer extends Component {
@@ -124,6 +125,13 @@ class MemberContainer extends Component {
       </div>
     )
   }
+}
+
+MemberContainer.propTypes = {
+  congress: PropTypes.array,
+  navClicked: PropTypes.string,
+  filterState: PropTypes.func,
+  resetFilter: PropTypes.func
 }
 
 export default MemberContainer;

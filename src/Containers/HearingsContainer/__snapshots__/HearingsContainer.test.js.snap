@@ -28,8 +28,12 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <div>
-          <p>
+        <div
+          className="hearing-end"
+        >
+          <p
+            className="hearing-title"
+          >
             Hearing 1
           </p>
           <p>
@@ -53,7 +57,9 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <p>
+            <p
+              className="hearing-title"
+            >
               Hearing 1
             </p>,
             <p>
@@ -66,6 +72,7 @@ ShallowWrapper {
               </a>
             </p>,
           ],
+          "className": "hearing-end",
         },
         "ref": null,
         "rendered": Array [
@@ -75,6 +82,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "Hearing 1",
+              "className": "hearing-title",
             },
             "ref": null,
             "rendered": "Hearing 1",
@@ -123,8 +131,12 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <div>
-            <p>
+          <div
+            className="hearing-end"
+          >
+            <p
+              className="hearing-title"
+            >
               Hearing 1
             </p>
             <p>
@@ -148,7 +160,9 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <p>
+              <p
+                className="hearing-title"
+              >
                 Hearing 1
               </p>,
               <p>
@@ -161,6 +175,7 @@ ShallowWrapper {
                 </a>
               </p>,
             ],
+            "className": "hearing-end",
           },
           "ref": null,
           "rendered": Array [
@@ -170,6 +185,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "Hearing 1",
+                "className": "hearing-title",
               },
               "ref": null,
               "rendered": "Hearing 1",
@@ -336,8 +352,12 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <div>
-          <p>
+        <div
+          className="hearing-end"
+        >
+          <p
+            className="hearing-title"
+          >
             Hearing 1
           </p>
           <p>
@@ -355,13 +375,16 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <p>
+            <p
+              className="hearing-title"
+            >
               Hearing 1
             </p>,
             <p>
               something.com
             </p>,
           ],
+          "className": "hearing-end",
         },
         "ref": null,
         "rendered": Array [
@@ -371,6 +394,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "Hearing 1",
+              "className": "hearing-title",
             },
             "ref": null,
             "rendered": "Hearing 1",
@@ -400,8 +424,12 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <div>
-            <p>
+          <div
+            className="hearing-end"
+          >
+            <p
+              className="hearing-title"
+            >
               Hearing 1
             </p>
             <p>
@@ -419,13 +447,16 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <p>
+              <p
+                className="hearing-title"
+              >
                 Hearing 1
               </p>,
               <p>
                 something.com
               </p>,
             ],
+            "className": "hearing-end",
           },
           "ref": null,
           "rendered": Array [
@@ -435,6 +466,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "Hearing 1",
+                "className": "hearing-title",
               },
               "ref": null,
               "rendered": "Hearing 1",

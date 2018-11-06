@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import Loading from '../../Components/Loading';
 import './HearingsContainer.css';
+import PropTypes from 'prop-types';
 import uuid from 'uuid';
 
 export const HearingsContainer = (props) => {
@@ -10,7 +11,6 @@ export const HearingsContainer = (props) => {
   if (props.navClicked === 'senate' && props.senateHearings) {
     hearingsList = 
       props.senateHearings.map((meeting, index) => {
-        console.log(index, props.senateHearings.length)
         if(index === props.senateHearings.length - 1) {
           return (
             <div key={uuid()} className="hearing-end">
@@ -61,5 +61,9 @@ export const mapStateToProps = (state) => ({
   senateHearings: state.senateHearings,
   houseHearings: state.houseHearings
 })
+
+HearingsContainer.propTypes = {
+  navClicked: PropTypes.string
+}
 
 export default connect(mapStateToProps)(HearingsContainer);
