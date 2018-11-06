@@ -47,7 +47,7 @@ export class App extends Component {
           )} />
           <Route exact path='/senate' render={() => (
             <div>
-              <Nav />
+              <Nav activeNav={'senate'} />
               <MemberContainer 
                 congress={this.props.senate} 
                 navClicked={"senate"}
@@ -59,7 +59,7 @@ export class App extends Component {
           )} />
           <Route exact path='/house' render={() => (
             <div>
-              <Nav />
+              <Nav activeNav={'house'} />
               <MemberContainer 
                 congress={this.props.house}
                 navClicked={"house"} 

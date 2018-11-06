@@ -25,7 +25,7 @@ export const Nav = (props) => {
           onClick={props.fetchSenate}
         >
           <button 
-            className="senate-btn"
+            className={props.activeNav === 'senate' ? `${props.activeNav}` : 'senate-btn'}
             name='senate'
             onClick={props.fetchSenateHearings}
           >
@@ -38,7 +38,7 @@ export const Nav = (props) => {
             onClick={props.fetchHouse}
         >
           <button 
-            className="house-btn"
+            className={props.activeNav === 'house' ? `${props.activeNav}` : 'house-btn'}
             name='house'
             onClick={props.fetchHouseHearings}
           >

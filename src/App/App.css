@@ -1,12 +1,16 @@
 body {
   background-image: url('../Utils/Assets/Images/bnr_strike.jpg');
-  /*background-position: bottom 200px left 0;*/
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
+  height: 100%;
 }
 
 .App {
   text-align: center;
+  height: 100%;
 }
 
 .App-logo {

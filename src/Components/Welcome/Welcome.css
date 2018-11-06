@@ -2,6 +2,11 @@ span {
   color: #CC2B1D;
 }
 
+.rose-pic {
+  border: solid 4px #000;
+  margin-top: 20px;
+}
+
 .welcome-body {
   font-family: 'Black Han Sans', sans-serif;
   margin: 26px;
@@ -11,6 +16,7 @@ span {
   background-color: rgba(243,243,243,0.8);
   border: solid 6px #000;
   border-radius: 48px;
+  height: 100vh;
   margin: 8px;
   padding: 20px;
 }

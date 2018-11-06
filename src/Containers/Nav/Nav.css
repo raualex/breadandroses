@@ -15,6 +15,28 @@
   justify-content: space-between;
 }
 
+.house {
+  background-color: #CC2B1D;
+  border-left: solid 2px #000;
+  color: #fff;
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 2em;
+  font-weight: 400;
+  height: 100%;
+  width: 50%;
+}
+
+.senate {
+  background-color: #CC2B1D;
+  border-right: solid 2px #000;
+  color: #fff;
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 2em;
+  font-weight: 400;
+  height: 100%;
+  width: 50%;  
+}
+
 .house-btn {
   border-left: solid 2px #000;
 }
@@ -40,12 +62,16 @@
 }
 
 .house-btn:hover,
-.senate-btn:hover {
+.senate-btn:hover,
+.senate:hover,
+.house:hover {
   cursor: pointer;
 }
 
 .house-btn:focus,
-.senate-btn:focus {
+.senate-btn:focus,
+.senate:focus,
+.house:focus {
   outline: none;
 }
 
