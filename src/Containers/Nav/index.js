@@ -8,6 +8,7 @@ import { fetchSenate } from '../../Thunks/fetchSenate';
 import { fetchHouse } from '../../Thunks/fetchHouse';
 import { fetchSHearings } from '../../Thunks/senateHearings';
 import { fetchHHearings } from '../../Thunks/houseHearings';
+import PropTypes from 'prop-types';
 
 export const Nav = (props) => {
 
@@ -60,5 +61,9 @@ export const mapDispatchToProps = (dispatch) => ({
   fetchSenateHearings: () => dispatch(fetchSHearings()),
   fetchHouseHearings: () => dispatch(fetchHHearings())
 })
+
+Nav.propTypes = {
+  activeNav: PropTypes.string
+}
 
 export default connect(null, mapDispatchToProps)(Nav);
