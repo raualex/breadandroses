@@ -19,6 +19,6 @@ This project was created working with the [The ProPublica Congress API](https://
 
 ## Desktop View
 ![LandingPage]()
-![WelcomeScreen](https://github.com/marcusp619/movietracker-frontend/blob/master/Screenshots/Screen%20Shot%202018-10-31%20at%208.52.53%20AM.png?raw=true)
+![WelcomeScreen](https://github.com/raualex/breadandroses/blob/master/src/Wireframes-Screenshots/WelcomePage.png?raw=true)
 ![SenatePage]()
 ![HousePage]()
