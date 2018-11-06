@@ -15,10 +15,10 @@ This project was created working with the [The ProPublica Congress API](https://
 [raualex (Alexander Rau) · GitHub](https://github.com/raualex)
 
 ## Wireframes 
-![Alt text](https://github.com/raualex/breadandroses/)
+![Wireframes](https://github.com/raualex/breadandroses/blob/master/src/Wireframes-Screenshots/BandRWireframe.png)
 
 ## Desktop View
-![LandingPage]()
+![LandingPage](https://github.com/raualex/breadandroses/blob/master/src/Wireframes-Screenshots/screencapture-LandingPage.png)
 ![WelcomeScreen](https://github.com/raualex/breadandroses/blob/master/src/Wireframes-Screenshots/screencapture-WelcomePage.png)
-![SenatePage]()
-![HousePage]()
+![SenatePage](https://github.com/raualex/breadandroses/blob/master/src/Wireframes-Screenshots/screencapture-SenatePage.png)
+![HousePage](https://github.com/raualex/breadandroses/blob/master/src/Wireframes-Screenshots/screencapture-HousePage.png)
