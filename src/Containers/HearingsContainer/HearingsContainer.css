@@ -1,6 +1,19 @@
+.hearing {
+  border-bottom: solid 2px #000;
+  width: 97%;
+}
+
 .hearings-container {
+  align-items: center;
   background-color: rgba(243,243,243,0.8);
   border: solid 6px #000;
   border-radius: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: 8px;
+}
+
+.hearing-title {
+  font-weight: 700;
 }

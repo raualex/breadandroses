@@ -9,23 +9,42 @@ export const HearingsContainer = (props) => {
 
   if (props.navClicked === 'senate' && props.senateHearings) {
     hearingsList = 
-      props.senateHearings.map((meeting) => {
-        return (
-          <div key={uuid()}>
-            <p>{meeting.title}</p>
-            <p>{meeting.url}</p>
-          </div>
-        )
+      props.senateHearings.map((meeting, index) => {
+        console.log(index, props.senateHearings.length)
+        if(index === props.senateHearings.length - 1) {
+          return (
+            <div key={uuid()} className="hearing-end">
+              <p className="hearing-title">{meeting.title}</p>
+              <p>{meeting.url}</p>
+            </div>
+          )
+        } else {
+          return (
+            <div key={uuid()} className="hearing">
+              <p className="hearing-title">{meeting.title}</p>
+              <p>{meeting.url}</p>
+            </div>
+          )
+        }
       })
   } else if (props.navClicked === 'house' && props.houseHearings) {
     hearingsList = 
-      props.houseHearings.map((meeting) => {
-        return (
-          <div key={uuid()}>
-            <p>{meeting.title}</p>
-            <p><a href={meeting.url} target="_blank" rel="noopener noreferrer">{meeting.url}</a></p>
-          </div>
-        )
+      props.houseHearings.map((meeting, index) => {
+        if (index === props.houseHearings.length - 1) {
+          return (
+            <div key={uuid()} className="hearing-end">
+              <p className="hearing-title">{meeting.title}</p>
+              <p><a href={meeting.url} target="_blank" rel="noopener noreferrer">{meeting.url}</a></p>
+            </div>
+          )
+        } else {
+          return (
+            <div key={uuid()} className="hearing">
+              <p className="hearing-title">{meeting.title}</p>
+              <p><a href={meeting.url} target="_blank" rel="noopener noreferrer">{meeting.url}</a></p>
+            </div>
+          )
+        }
       })
   } else {
     hearingsList = <Loading />
