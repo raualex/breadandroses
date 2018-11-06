@@ -19,6 +19,6 @@ This project was created working with the [The ProPublica Congress API](https://
 
 ## Desktop View
 ![LandingPage]()
-![WelcomeScreen](https://raw.githubusercontent.com/raualex/breadandroses/master/src/Wireframes-Screenshots/WelcomePage.png)
+![WelcomeScreen](https://github.com/raualex/breadandroses/blob/master/src/Wireframes-Screenshots/screencapture-WelcomePage.png)
 ![SenatePage]()
 ![HousePage]()
