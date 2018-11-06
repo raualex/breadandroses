@@ -36,6 +36,18 @@ ShallowWrapper {
         >
           Navigate above to see who is in your Senate and House Labor Committees and what they are doing for you.
         </p>,
+        <div>
+          <img
+            alt="Rose Schneiderman portrait"
+            className="rose-pic"
+            src="RoseSchneiderman.jpg"
+          />
+          <p
+            className="welcome-body"
+          >
+            "The worker must have bread, but she must have roses, too." - Rose Schneiderman
+          </p>
+        </div>,
       ],
       "className": "welcome-container",
     },
@@ -95,6 +107,54 @@ ShallowWrapper {
         "rendered": "Navigate above to see who is in your Senate and House Labor Committees and what they are doing for you.",
         "type": "p",
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <img
+              alt="Rose Schneiderman portrait"
+              className="rose-pic"
+              src="RoseSchneiderman.jpg"
+            />,
+            <p
+              className="welcome-body"
+            >
+              "The worker must have bread, but she must have roses, too." - Rose Schneiderman
+            </p>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "Rose Schneiderman portrait",
+              "className": "rose-pic",
+              "src": "RoseSchneiderman.jpg",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "\\"The worker must have bread, but she must have roses, too.\\" - Rose Schneiderman",
+              "className": "welcome-body",
+            },
+            "ref": null,
+            "rendered": "\\"The worker must have bread, but she must have roses, too.\\" - Rose Schneiderman",
+            "type": "p",
+          },
+        ],
+        "type": "div",
+      },
     ],
     "type": "div",
   },
@@ -123,6 +183,18 @@ ShallowWrapper {
           >
             Navigate above to see who is in your Senate and House Labor Committees and what they are doing for you.
           </p>,
+          <div>
+            <img
+              alt="Rose Schneiderman portrait"
+              className="rose-pic"
+              src="RoseSchneiderman.jpg"
+            />
+            <p
+              className="welcome-body"
+            >
+              "The worker must have bread, but she must have roses, too." - Rose Schneiderman
+            </p>
+          </div>,
         ],
         "className": "welcome-container",
       },
@@ -181,6 +253,54 @@ ShallowWrapper {
           "ref": null,
           "rendered": "Navigate above to see who is in your Senate and House Labor Committees and what they are doing for you.",
           "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <img
+                alt="Rose Schneiderman portrait"
+                className="rose-pic"
+                src="RoseSchneiderman.jpg"
+              />,
+              <p
+                className="welcome-body"
+              >
+                "The worker must have bread, but she must have roses, too." - Rose Schneiderman
+              </p>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "alt": "Rose Schneiderman portrait",
+                "className": "rose-pic",
+                "src": "RoseSchneiderman.jpg",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "\\"The worker must have bread, but she must have roses, too.\\" - Rose Schneiderman",
+                "className": "welcome-body",
+              },
+              "ref": null,
+              "rendered": "\\"The worker must have bread, but she must have roses, too.\\" - Rose Schneiderman",
+              "type": "p",
+            },
+          ],
+          "type": "div",
         },
       ],
       "type": "div",
