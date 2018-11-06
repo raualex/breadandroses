@@ -40,7 +40,11 @@ class MemberContainer extends Component {
   handleChange = (event) => {
     let state = event.target.value
    
-    this.setState({ select: state }, () => this.props.filterState(state, this.props.navClicked))
+    if (this.state.select === '') {
+      this.setState({ select: state }, () => this.props.filterState(state, this.props.navClicked))
+    } else {
+      return
+    }
   }
 
   handleReset = (event) => {
