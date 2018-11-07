@@ -46,6 +46,7 @@ export const houseStates = [
     {'NJ': 'New Jersey - NJ'},
     {'NY': 'New York - NY'},
     {'OH': 'Ohio - OH'},
+    {'OK': 'Oklahoma - OK'},
     {'OR': 'Oregon - OR'},
     {'PA': 'Pennsylvania - PA'},
     {'SC': 'South Carolina - SC'},
