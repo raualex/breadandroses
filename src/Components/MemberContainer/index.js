@@ -70,7 +70,7 @@ class MemberContainer extends Component {
         </div>
     } else {    
       members = congress.map((person) => {
- 
+
         return (
           <div key={uuid()} className={person.party}>
             <img 

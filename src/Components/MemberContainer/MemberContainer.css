@@ -67,7 +67,9 @@
 }
 
 .politician {
-  border-radius: 48px; 
+  border-radius: 48px;
+  height: 240px;
+  width: 200px;
 }
 
 .state-filter-container {

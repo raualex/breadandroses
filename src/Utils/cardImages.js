@@ -62,7 +62,9 @@ const cardImage = {
   "A. Drew Ferguson": require('../Utils/Assets/Images/representatives/dFerguson.jpeg'),
   "Ron Estes": require('../Utils/Assets/Images/representatives/rEstes.jpeg'),
   "Karen Handel": require('../Utils/Assets/Images/representatives/kHandel.jpeg'),
-  "Jim Banks": require('../Utils/Assets/Images/representatives/jBanks.jpeg')
+  "Jim Banks": require('../Utils/Assets/Images/representatives/jBanks.jpeg'),
+  "Steve Russell": require('../Utils/Assets/Images/representatives/sRussell.jpg'),
+  "Mike Bishop": require('../Utils/Assets/Images/representatives/mBishop.jpeg'),
 }
 
 export default cardImage
