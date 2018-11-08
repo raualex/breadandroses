@@ -8,6 +8,10 @@ This project was created working with the [The ProPublica Congress API](https://
 
 `npm start`
 
+You will need to get a key for the ProPublica Congress API (https://www.propublica.org/datastore/api/propublica-congress-api)
+
+Once you have a key, create a file called "key.js" in the folder: src/Utils/API and export it, so the import at the top of the API.js file will work.
+
 ## Testing
 [Enzyme](https://github.com/airbnb/enzyme)
 
