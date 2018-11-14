@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1541536348336" clover="3.2.0">
-  <project timestamp="1541536348336" name="All files">
-    <metrics statements="255" coveredstatements="195" conditionals="104" coveredconditionals="55" methods="86" coveredmethods="68" elements="445" coveredelements="318" complexity="0" loc="255" ncloc="255" packages="14" files="25" classes="25">
+<coverage generated="1541612262417" clover="3.2.0">
+  <project timestamp="1541612262418" name="All files">
+    <metrics statements="256" coveredstatements="196" conditionals="104" coveredconditionals="55" methods="86" coveredmethods="68" elements="446" coveredelements="319" complexity="0" loc="256" ncloc="256" packages="14" files="25" classes="25">
       <package name="src">
         <metrics statements="52" coveredstatements="1" conditionals="32" coveredconditionals="0" methods="15" coveredmethods="0"/>
         <file name="index.js" path="/Users/alexanderrau/Desktop/Turing/Mod3/Bread-and-roses/src/index.js">
@@ -76,7 +76,7 @@
         </file>
         <file name="index.js" path="/Users/alexanderrau/Desktop/Turing/Mod3/Bread-and-roses/src/Actions/index.js">
           <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-          <line num="1" count="42" type="stmt"/>
+          <line num="1" count="41" type="stmt"/>
           <line num="6" count="12" type="stmt"/>
         </file>
         <file name="senate-actions.js" path="/Users/alexanderrau/Desktop/Turing/Mod3/Bread-and-roses/src/Actions/senate-actions.js">
@@ -147,9 +147,9 @@
           <line num="24" count="2" type="cond" truecount="1" falsecount="1"/>
           <line num="25" count="2" type="stmt"/>
           <line num="29" count="16" type="stmt"/>
-          <line num="30" count="388" type="stmt"/>
-          <line num="31" count="388" type="stmt"/>
-          <line num="32" count="388" type="stmt"/>
+          <line num="30" count="390" type="stmt"/>
+          <line num="31" count="390" type="stmt"/>
+          <line num="32" count="390" type="stmt"/>
           <line num="41" count="3" type="stmt"/>
           <line num="43" count="3" type="cond" truecount="2" falsecount="0"/>
           <line num="44" count="2" type="stmt"/>
@@ -199,16 +199,17 @@
         </file>
       </package>
       <package name="src.Containers.Nav">
-        <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="2" methods="6" coveredmethods="6"/>
+        <metrics statements="8" coveredstatements="8" conditionals="4" coveredconditionals="2" methods="6" coveredmethods="6"/>
         <file name="index.js" path="/Users/alexanderrau/Desktop/Turing/Mod3/Bread-and-roses/src/Containers/Nav/index.js">
-          <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="2" methods="6" coveredmethods="6"/>
-          <line num="12" count="2" type="stmt"/>
-          <line num="14" count="5" type="stmt"/>
-          <line num="57" count="4" type="stmt"/>
-          <line num="58" count="1" type="stmt"/>
+          <metrics statements="8" coveredstatements="8" conditionals="4" coveredconditionals="2" methods="6" coveredmethods="6"/>
+          <line num="13" count="2" type="stmt"/>
+          <line num="15" count="5" type="stmt"/>
+          <line num="58" count="4" type="stmt"/>
           <line num="59" count="1" type="stmt"/>
           <line num="60" count="1" type="stmt"/>
           <line num="61" count="1" type="stmt"/>
+          <line num="62" count="1" type="stmt"/>
+          <line num="65" count="2" type="stmt"/>
         </file>
       </package>
       <package name="src.Reducers">
@@ -280,13 +281,13 @@
           <line num="8" count="6" type="stmt"/>
           <line num="9" count="6" type="stmt"/>
           <line num="10" count="6" type="stmt"/>
-          <line num="11" count="5" type="cond" truecount="2" falsecount="0"/>
-          <line num="12" count="4" type="stmt"/>
-          <line num="14" count="5" type="stmt"/>
-          <line num="15" count="27" type="stmt"/>
+          <line num="11" count="4" type="cond" truecount="2" falsecount="0"/>
+          <line num="12" count="3" type="stmt"/>
+          <line num="14" count="4" type="stmt"/>
+          <line num="15" count="3" type="stmt"/>
           <line num="16" count="2" type="stmt"/>
           <line num="17" count="2" type="stmt"/>
-          <line num="19" count="4" type="stmt"/>
+          <line num="19" count="3" type="stmt"/>
           <line num="20" count="2" type="stmt"/>
           <line num="22" count="3" type="stmt"/>
           <line num="23" count="3" type="stmt"/>
@@ -337,10 +338,10 @@
           <line num="3" count="4" type="stmt"/>
           <line num="5" count="3" type="stmt"/>
           <line num="9" count="3" type="stmt"/>
-          <line num="10" count="3" type="stmt"/>
-          <line num="11" count="3" type="stmt"/>
-          <line num="12" count="26" type="stmt"/>
-          <line num="19" count="3" type="stmt"/>
+          <line num="10" count="2" type="stmt"/>
+          <line num="11" count="2" type="stmt"/>
+          <line num="12" count="2" type="stmt"/>
+          <line num="19" count="2" type="stmt"/>
           <line num="22" count="4" type="stmt"/>
           <line num="24" count="3" type="stmt"/>
           <line num="28" count="2" type="stmt"/>
@@ -349,7 +350,7 @@
           <line num="31" count="2" type="stmt"/>
           <line num="38" count="2" type="stmt"/>
           <line num="41" count="4" type="stmt"/>
-          <line num="43" count="27" type="stmt"/>
+          <line num="43" count="3" type="stmt"/>
           <line num="47" count="3" type="stmt"/>
           <line num="48" count="3" type="stmt"/>
           <line num="49" count="2" type="stmt"/>

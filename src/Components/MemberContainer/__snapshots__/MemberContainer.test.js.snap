@@ -233,6 +233,15 @@ ShallowWrapper {
             <option
               value={
                 Array [
+                  "OK",
+                ]
+              }
+            >
+              Oklahoma - OK
+            </option>
+            <option
+              value={
+                Array [
                   "OR",
                 ]
               }
@@ -542,6 +551,15 @@ ShallowWrapper {
               <option
                 value={
                   Array [
+                    "OK",
+                  ]
+                }
+              >
+                Oklahoma - OK
+              </option>
+              <option
+                value={
+                  Array [
                     "OR",
                   ]
                 }
@@ -796,6 +814,15 @@ ShallowWrapper {
                     }
                   >
                     Ohio - OH
+                  </option>,
+                  <option
+                    value={
+                      Array [
+                        "OK",
+                      ]
+                    }
+                  >
+                    Oklahoma - OK
                   </option>,
                   <option
                     value={
@@ -1233,6 +1260,24 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
+                "key": "OK",
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Oklahoma - OK",
+                  ],
+                  "value": Array [
+                    "OK",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Oklahoma - OK",
+                ],
+                "type": "option",
+              },
+              Object {
+                "instance": null,
                 "key": "OR",
                 "nodeType": "host",
                 "props": Object {
@@ -1578,6 +1623,15 @@ ShallowWrapper {
               <option
                 value={
                   Array [
+                    "OK",
+                  ]
+                }
+              >
+                Oklahoma - OK
+              </option>
+              <option
+                value={
+                  Array [
                     "OR",
                   ]
                 }
@@ -1887,6 +1941,15 @@ ShallowWrapper {
                 <option
                   value={
                     Array [
+                      "OK",
+                    ]
+                  }
+                >
+                  Oklahoma - OK
+                </option>
+                <option
+                  value={
+                    Array [
                       "OR",
                     ]
                   }
@@ -2141,6 +2204,15 @@ ShallowWrapper {
                       }
                     >
                       Ohio - OH
+                    </option>,
+                    <option
+                      value={
+                        Array [
+                          "OK",
+                        ]
+                      }
+                    >
+                      Oklahoma - OK
                     </option>,
                     <option
                       value={
@@ -2573,6 +2645,24 @@ ShallowWrapper {
                   "ref": null,
                   "rendered": Array [
                     "Ohio - OH",
+                  ],
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "OK",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Oklahoma - OK",
+                    ],
+                    "value": Array [
+                      "OK",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Oklahoma - OK",
                   ],
                   "type": "option",
                 },
@@ -6802,6 +6892,15 @@ ShallowWrapper {
             <option
               value={
                 Array [
+                  "OK",
+                ]
+              }
+            >
+              Oklahoma - OK
+            </option>
+            <option
+              value={
+                Array [
                   "OR",
                 ]
               }
@@ -7628,6 +7727,15 @@ ShallowWrapper {
               <option
                 value={
                   Array [
+                    "OK",
+                  ]
+                }
+              >
+                Oklahoma - OK
+              </option>
+              <option
+                value={
+                  Array [
                     "OR",
                   ]
                 }
@@ -7882,6 +7990,15 @@ ShallowWrapper {
                     }
                   >
                     Ohio - OH
+                  </option>,
+                  <option
+                    value={
+                      Array [
+                        "OK",
+                      ]
+                    }
+                  >
+                    Oklahoma - OK
                   </option>,
                   <option
                     value={
@@ -8319,6 +8436,24 @@ ShallowWrapper {
               },
               Object {
                 "instance": null,
+                "key": "OK",
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    "Oklahoma - OK",
+                  ],
+                  "value": Array [
+                    "OK",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  "Oklahoma - OK",
+                ],
+                "type": "option",
+              },
+              Object {
+                "instance": null,
                 "key": "OR",
                 "nodeType": "host",
                 "props": Object {
@@ -8739,6 +8874,15 @@ ShallowWrapper {
                 }
               >
                 Ohio - OH
+              </option>
+              <option
+                value={
+                  Array [
+                    "OK",
+                  ]
+                }
+              >
+                Oklahoma - OK
               </option>
               <option
                 value={
@@ -9569,6 +9713,15 @@ ShallowWrapper {
                 <option
                   value={
                     Array [
+                      "OK",
+                    ]
+                  }
+                >
+                  Oklahoma - OK
+                </option>
+                <option
+                  value={
+                    Array [
                       "OR",
                     ]
                   }
@@ -9823,6 +9976,15 @@ ShallowWrapper {
                       }
                     >
                       Ohio - OH
+                    </option>,
+                    <option
+                      value={
+                        Array [
+                          "OK",
+                        ]
+                      }
+                    >
+                      Oklahoma - OK
                     </option>,
                     <option
                       value={
@@ -10255,6 +10417,24 @@ ShallowWrapper {
                   "ref": null,
                   "rendered": Array [
                     "Ohio - OH",
+                  ],
+                  "type": "option",
+                },
+                Object {
+                  "instance": null,
+                  "key": "OK",
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      "Oklahoma - OK",
+                    ],
+                    "value": Array [
+                      "OK",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    "Oklahoma - OK",
                   ],
                   "type": "option",
                 },
