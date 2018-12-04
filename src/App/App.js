@@ -38,7 +38,7 @@ export class App extends Component {
     return (
       <div className="App">
         <Switch>
-          <Route exact path='/' component={LandingPage} />
+          <Route exact path='/breadandroses' component={LandingPage} />
           <Route exact path='/welcome' render={() => (
             <div>
               <Nav />
