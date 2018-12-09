@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/breadandroses/static/media/jWilson.ab61e421.jpeg"
   },
   {
-    "revision": "64110954a4fb357fa9a6",
+    "revision": "a487a7b47c08f0b2630e",
     "url": "/breadandroses/static/css/main.fdfd17ce.chunk.css"
   },
   {
@@ -124,8 +124,8 @@ self.__precacheManifest = [
     "url": "/breadandroses/static/media/vFoxx.74c04d45.jpeg"
   },
   {
-    "revision": "64110954a4fb357fa9a6",
-    "url": "/breadandroses/static/js/main.64110954.chunk.js"
+    "revision": "a487a7b47c08f0b2630e",
+    "url": "/breadandroses/static/js/main.a487a7b4.chunk.js"
   },
   {
     "revision": "43c9f4d5f28c5964e56caeff3b6d9007",
@@ -244,7 +244,7 @@ self.__precacheManifest = [
     "url": "/breadandroses/static/media/bnr_strike.6b8e59cb.jpg"
   },
   {
-    "revision": "9487873671dd78c12628d585498aa451",
+    "revision": "04723f294485ee76dbf5535865024847",
     "url": "/breadandroses/index.html"
   }
 ];

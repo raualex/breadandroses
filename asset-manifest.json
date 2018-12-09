@@ -1,7 +1,7 @@
 {
   "main.css": "/breadandroses/static/css/main.fdfd17ce.chunk.css",
-  "main.js": "/breadandroses/static/js/main.64110954.chunk.js",
-  "main.js.map": "/breadandroses/static/js/main.64110954.chunk.js.map",
+  "main.js": "/breadandroses/static/js/main.a487a7b4.chunk.js",
+  "main.js.map": "/breadandroses/static/js/main.a487a7b4.chunk.js.map",
   "static/js/1.a0c0b423.chunk.js": "/breadandroses/static/js/1.a0c0b423.chunk.js",
   "static/js/1.a0c0b423.chunk.js.map": "/breadandroses/static/js/1.a0c0b423.chunk.js.map",
   "runtime~main.js": "/breadandroses/static/js/runtime~main.b40c807d.js",
@@ -65,6 +65,6 @@
   "static/media/App.css": "/breadandroses/static/media/bnr_strike.6b8e59cb.jpg",
   "static/css/main.fdfd17ce.chunk.css.map": "/breadandroses/static/css/main.fdfd17ce.chunk.css.map",
   "index.html": "/breadandroses/index.html",
-  "precache-manifest.ba73a2d6fc3a85b7da8ebe1938fd5905.js": "/breadandroses/precache-manifest.ba73a2d6fc3a85b7da8ebe1938fd5905.js",
+  "precache-manifest.74c014fec854506fa0dbeabd29d27a45.js": "/breadandroses/precache-manifest.74c014fec854506fa0dbeabd29d27a45.js",
   "service-worker.js": "/breadandroses/service-worker.js"
 }
