@@ -4,7 +4,7 @@ This project was created working with the [The ProPublica Congress API](https://
 This app is currently delpoyed on GitHub Pages: https://raualex.github.io/breadandroses/
 
 ## Getting Started
-`git clone` this [GitHub - raualex/breadandroses.git](https://github.com/raualex/breadandroses.git)
+`git clone` this repo: [GitHub - raualex/breadandroses.git](https://github.com/raualex/breadandroses.git)
 
 `npm install`
 
