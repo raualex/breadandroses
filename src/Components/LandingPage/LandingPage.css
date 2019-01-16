@@ -147,3 +147,147 @@
     from { -moz-transform: rotate(0deg); }
     to   { -moz-transform: rotate(20deg); }
 }
+
+@media screen and (max-width: 1300px) {
+  .outer {
+    position: relative;
+    top: -150px;
+    left: 174px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .back-foreground {
+    left: -304px;
+  }
+
+  .outer {
+    position: relative;
+    top: -150px;
+    left: 134px;
+  }
+
+  .star-container {
+    left: 27%;
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 1085px) {
+  .back-foreground {
+    left: -328px;
+    width: 158%;
+  }
+
+  .outer {
+    position: relative;
+    top: -150px;
+    left: 40px;
+  }
+
+  .star-container {
+    left: 21%;
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 1010px) {
+  .back-foreground {
+    left: -340px;
+    width: 165%;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .back-foreground {
+    left: -352px;
+    width: 172%;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .back-foreground {
+    left: -352px;
+    width: 172%;
+  }
+
+  .outer {
+    position: relative;
+    top: -150px;
+    left: -28px;
+  }
+
+  .star-container {
+    left: 17%;
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 856px) {
+  .back-foreground {
+    left: -394px;
+    width: 196%;
+  }
+}
+
+@media screen and (max-width: 834px) {
+  .outer {
+    position: relative;
+    top: -150px;
+    left: -68px;
+  }
+
+  .star-container {
+    left: 14%;
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .back-foreground {
+    left: -454px;
+    width: 210%;
+  }
+
+  .outer {
+    position: relative;
+    top: -150px;
+    left: -110px;
+  }
+
+  .star-container {
+    left: 11%;
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 734px) {
+  .back-foreground {
+    left: -534px;
+    width: 242%;
+  }
+
+  .outer {
+    position: relative;
+    top: -150px;
+    left: -146px;
+  }
+
+  .star-container {
+    left: 8%;
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .back-foreground {
+    left: -564px;
+    width: 262%;
+  }
+
+  .outer {
+    position: relative;
+    top: -150px;
+    left: -148px;
+  }
+}
