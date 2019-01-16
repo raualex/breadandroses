@@ -21,7 +21,7 @@ ShallowWrapper {
         <Route
           component={[Function]}
           exact={true}
-          path="/"
+          path="/breadandroses"
         />
         <Route
           exact={true}
@@ -56,7 +56,7 @@ ShallowWrapper {
           <Route
             component={[Function]}
             exact={true}
-            path="/"
+            path="/breadandroses"
           />,
           <Route
             exact={true}
@@ -89,7 +89,7 @@ ShallowWrapper {
           "props": Object {
             "component": [Function],
             "exact": true,
-            "path": "/",
+            "path": "/breadandroses",
           },
           "ref": null,
           "rendered": null,
@@ -162,7 +162,7 @@ ShallowWrapper {
           <Route
             component={[Function]}
             exact={true}
-            path="/"
+            path="/breadandroses"
           />
           <Route
             exact={true}
@@ -197,7 +197,7 @@ ShallowWrapper {
             <Route
               component={[Function]}
               exact={true}
-              path="/"
+              path="/breadandroses"
             />,
             <Route
               exact={true}
@@ -230,7 +230,7 @@ ShallowWrapper {
             "props": Object {
               "component": [Function],
               "exact": true,
-              "path": "/",
+              "path": "/breadandroses",
             },
             "ref": null,
             "rendered": null,
